@@ -1,4 +1,5 @@
 .venv/
+.install-check/
 __pycache__/
 *.pyc
 .pytest_cache/

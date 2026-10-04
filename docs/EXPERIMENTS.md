@@ -18,4 +18,4 @@ qas results summarize results/runs --output results/tables/combined.csv
 qas results plot results/runs/EXPERIMENT/RUN
 ```
 
-`experiments/registry.yaml` records the locked Phase-1 experiment. Config validation rejects unknown keys, duplicate seeds, unsafe IDs, invalid finite values and unsupported sizes. Registry validation checks required fields, paths, IDs, seeds, and accuracy criteria against the config. Exploratory labs are labeled separately and never folded into the locked TFIM verdict. Lab configuration is stored from CLI options; advanced graph/channel/search parameters are available through the Python API.
+`experiments/registry.yaml` records the locked Phase-1 experiment. Config validation rejects unknown keys, duplicate seeds, unsafe IDs, invalid finite values and unsupported sizes. Registry validation checks required fields, paths, IDs, seeds, and accuracy criteria against the config. Exploratory labs remain separate. Each accepts `--config experiments/configs/NAME.yaml`: noise_sweep, zne, qaoa, discovery. Configs lock channel/scales, graph/depth, or search budgets and seeds.

@@ -15,7 +15,7 @@ Audit baseline: c03986e, containing only README.md and proprietary LICENSE. No c
 | MaxCut QAOA | VALIDATED | two-site exact cut / optimization sanity |
 | Circuit discovery | VALIDATED | Bell circuit, deterministic equal-evaluation searches; advantage NOT TESTED |
 | Hardware simulator | VALIDATED | seeded Bell shot counts |
-| IBM adapter | PARTIAL / NOT EXECUTED | opt-in guard tested; live submission/status/results require credentials and optional SDK |
+| IBM adapter | VALIDATED with mocks / NOT EXECUTED live | opt-in and mocked service paths; live access requires credentials/hardware |
 | Plotting / tables / read-only API | VALIDATED | persisted-artifact integration |
 | Dashboard | NOT IMPLEMENTED | optional; plots and API provide stored evidence access |
 | Complex/autoregressive NQS / H2 | NOT IMPLEMENTED | future optional research extensions |
