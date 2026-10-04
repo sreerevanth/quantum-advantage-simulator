@@ -2,6 +2,7 @@
 
 import argparse
 import json
+from pathlib import Path
 
 import numpy as np
 
@@ -12,8 +13,6 @@ from qas.config import load
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run")
 args = parser.parse_args()
-from pathlib import Path
-
 run = Path(args.run)
 config = load(run / "config.yaml")
 rows = json.loads((run / "metrics.json").read_text())["rows"]
