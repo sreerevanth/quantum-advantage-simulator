@@ -76,17 +76,20 @@ def run(
                     elapsed = time.perf_counter() - start
                     _, peak = tracemalloc.get_traced_memory()
                     tracemalloc.stop()
+                    predicted = result.pop("state")
                     row = {
                         "method": method,
                         "qubits": n,
                         "seed": seed,
-                        **metrics.compare(result.pop("state"), reference, ham, n),
+                        **metrics.compare(predicted, reference, ham, n),
                         "runtime_seconds": elapsed,
                         "python_peak_bytes": peak,
                     }
                     parameters = result.pop("parameters")
                     np.savez_compressed(
-                        directory / "checkpoints" / f"{method}-{n}-{seed}.npz", **parameters
+                        directory / "checkpoints" / f"{method}-{n}-{seed}.npz",
+                        state=predicted,
+                        **parameters,
                     )
                     row.update(result)
                     rows.append(row)

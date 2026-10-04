@@ -17,7 +17,14 @@ def plot(run: str | Path) -> list[Path]:
     output = run / "figures"
     output.mkdir(exist_ok=True)
     paths = []
-    for metric in ("absolute_energy_error", "fidelity", "runtime_seconds", "python_peak_bytes"):
+    for metric in (
+        "absolute_energy_error",
+        "fidelity",
+        "runtime_seconds",
+        "python_peak_bytes",
+        "magnetization_error",
+        "transverse_magnetization_error",
+    ):
         fig, ax = plt.subplots(figsize=(6, 4), layout="constrained")
         for method in ("exact", "nqs", "vqe"):
             selected = [r for r in rows if r["method"] == method]
@@ -32,6 +39,7 @@ def plot(run: str | Path) -> list[Path]:
                 label=method,
             )
         ax.set(xlabel="Qubits", ylabel=metric.replace("_", " "))
+        ax.set_xticks(sorted({r["qubits"] for r in rows}))
         ax.legend()
         ax.grid(alpha=0.2)
         for suffix in ("png", "svg"):
@@ -50,6 +58,22 @@ def plot(run: str | Path) -> list[Path]:
     ax.set(xlabel="Optimizer step", ylabel="Energy", title="Persisted optimization histories")
     fig.savefig(output / "convergence.png", dpi=200)
     plt.close(fig)
+    for n in sorted({r["qubits"] for r in rows}):
+        for method in ("nqs", "vqe"):
+            selected = [r for r in rows if r["qubits"] == n and r["method"] == method]
+            if not selected:
+                continue
+            fig, ax = plt.subplots(figsize=(6, 4), layout="constrained")
+            for row in selected:
+                ax.plot(row["history"], label=f"seed {row['seed']}")
+            ax.axhline(selected[0]["exact_energy"], color="black", linestyle="--", label="exact")
+            ax.set(xlabel="Optimizer step", ylabel="Energy", title=f"{method.upper()}, {n} qubits")
+            ax.legend()
+            for suffix in ("png", "svg"):
+                path = output / f"{method}_convergence_{n}.{suffix}"
+                fig.savefig(path, dpi=200)
+                paths.append(path)
+            plt.close(fig)
     return paths
 
 

@@ -73,7 +73,9 @@ def test_benchmark_artifacts_plot_summary_api(tmp_path):
         "verdict.md",
     ):
         assert (directory / file).is_file()
-    assert len(plot(directory)) == 8
+    assert len(plot(directory)) == 16
+    for checkpoint in (directory / "checkpoints").glob("nqs*.npz"):
+        assert np.linalg.norm(np.load(checkpoint)["state"]) == pytest.approx(1)
     assert summarize(tmp_path, tmp_path / "table.csv").is_file()
     from fastapi.testclient import TestClient
 
