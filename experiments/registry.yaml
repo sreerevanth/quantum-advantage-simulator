@@ -1,0 +1,15 @@
+- id: tfim-phase1
+  name: Locked TFIM approximation accuracy
+  description: Exact versus enumerated RBM and state-vector VQE on open chains
+  hypothesis: Both approximations meet accuracy thresholds at every registered size and seed
+  baseline: Dense Hermitian exact diagonalisation
+  methods: [exact, nqs, vqe]
+  controlled_variables: [qubits, j, h, boundary, seeds, optimizer, budget, depth, tolerance]
+  primary_metrics: [absolute_energy_error, fidelity]
+  secondary_metrics: [runtime_seconds, python_peak_bytes, magnetization_error]
+  criteria: {energy_error_max: 0.05, fidelity_min: 0.95}
+  seeds: [0, 1, 2, 3, 4]
+  resource_budget: {qubits_max: 8, nqs_steps: 300, vqe_iterations: 150, vqe_depth: 3}
+  configuration: experiments/configs/tfim_phase1.yaml
+  expected_artifacts: [config.yaml, environment.json, metrics.json, summary.csv, stdout.log, verdict.md, checkpoints, figures]
+  status: IMPLEMENTED
