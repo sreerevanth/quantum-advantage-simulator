@@ -69,6 +69,7 @@ def test_vqe_convergence_reproducibility():
     a = variational.vqe(ham, 2, iterations=80)
     b = variational.vqe(ham, 2, iterations=80)
     assert np.allclose(a["state"], b["state"])
+    assert np.allclose(variational.prepare(a["parameters"]["weights"], 2, 3), a["state"])
     assert abs(exact.expectation(a["state"], ham) + np.sqrt(5)) < 1e-7
 
 

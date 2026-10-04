@@ -4,6 +4,34 @@ import numpy as np
 from scipy.optimize import minimize
 
 
+def apply_ansatz(params, n: int, depth: int, ansatz: str = "ry"):
+    """Shared preparation circuit for optimization and checkpoint replay."""
+    import pennylane as qml
+
+    if ansatz not in ("ry", "rot") or n < 1 or depth < 1:
+        raise ValueError("Invalid ansatz")
+    weights = qml.math.reshape(params, (depth, n, 1 if ansatz == "ry" else 3))
+    for layer in range(depth):
+        for wire in range(n):
+            if ansatz == "ry":
+                qml.RY(weights[layer, wire, 0], wires=wire)
+            else:
+                qml.Rot(*weights[layer, wire], wires=wire)
+        for wire in range(n - 1):
+            qml.CNOT(wires=[wire, wire + 1])
+
+
+def prepare(params: np.ndarray, n: int, depth: int, ansatz: str = "ry") -> np.ndarray:
+    import pennylane as qml
+
+    @qml.qnode(qml.device("default.qubit", wires=n))
+    def state():
+        apply_ansatz(params, n, depth, ansatz)
+        return qml.state()
+
+    return np.asarray(state())
+
+
 def vqe(
     matrix: np.ndarray,
     n: int,
@@ -26,15 +54,7 @@ def vqe(
     shape = (depth, n, width)
 
     def circuit(params):
-        weights = qml.math.reshape(params, shape)
-        for layer in range(depth):
-            for wire in range(n):
-                if ansatz == "ry":
-                    qml.RY(weights[layer, wire, 0], wires=wire)
-                else:
-                    qml.Rot(*weights[layer, wire], wires=wire)
-            for wire in range(n - 1):
-                qml.CNOT(wires=[wire, wire + 1])
+        apply_ansatz(params, n, depth, ansatz)
 
     @qml.qnode(qml.device("default.qubit", wires=n), interface="autograd")
     def cost(params):

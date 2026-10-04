@@ -6,9 +6,13 @@ from pathlib import Path
 
 import numpy as np
 
+from qas.config import load
+
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("run", type=Path)
 args = parser.parse_args()
+if load(args.run / "config.yaml").dict() != load("experiments/configs/tfim_phase1.yaml").dict():
+    raise SystemExit("This report requires the locked Phase-1 configuration")
 data = json.loads((args.run / "metrics.json").read_text())
 if not data["complete"]:
     raise SystemExit("Refusing a final report for incomplete Phase-1 evidence")
@@ -21,7 +25,10 @@ lines = [
 for group in data["seed_statistics"]:
     energy = group["absolute_energy_error"]
     fidelity = group["fidelity"]
-    sd = lambda metric: "n/a" if metric["std"] is None else f"{metric['std']:.6g}"
+
+    def sd(metric):
+        return "n/a" if metric["std"] is None else f"{metric['std']:.6g}"
+
     lines.append(
         f"| {group['qubits']} | {group['method']} | {energy['count']} | {energy['mean']:.6g} ± {sd(energy)} | {fidelity['mean']:.8g} ± {sd(fidelity)} | {group['runtime_seconds']['mean']:.6g} |"
     )
