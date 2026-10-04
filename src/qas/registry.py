@@ -76,6 +76,23 @@ def read(path: str | Path = "experiments/registry.yaml") -> list[dict]:
         from qas.config import load
 
         config = load(resolved)
+        if entry["status"] not in {
+            "IMPLEMENTED",
+            "VALIDATED",
+            "PARTIAL",
+            "NOT IMPLEMENTED",
+            "BLOCKED",
+            "NOT EXECUTED",
+        }:
+            raise ValueError("Unknown implementation status")
+        budget = {
+            "qubits_max": max(config.qubits),
+            "nqs_steps": config.nqs_steps,
+            "vqe_iterations": config.vqe_iterations,
+            "vqe_depth": config.vqe_depth,
+        }
+        if entry["resource_budget"] != budget or entry["methods"] != ["exact", "nqs", "vqe"]:
+            raise ValueError("Registry budget or methods disagree with locked configuration")
         if config.experiment_id != entry["id"] or list(config.seeds) != entry["seeds"]:
             raise ValueError("Registry and configuration disagree")
         if entry["criteria"] != {

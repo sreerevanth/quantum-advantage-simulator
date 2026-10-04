@@ -32,6 +32,14 @@ def load(path: str | Path) -> dict:
         raise ValueError("Lab config must be a mapping with recognized keys")
     if data.get("kind") not in ("noise", "mitigate", "qaoa", "discover"):
         raise ValueError("Unknown lab kind")
+    relevant = {"experiment_id", "kind", "qubits", "seeds"} | {
+        "noise": {"probabilities", "scales", "channel"},
+        "mitigate": {"probabilities", "scales", "channel"},
+        "qaoa": {"edges", "depth", "iterations"},
+        "discover": {"budget", "max_gates", "penalty"},
+    }[data["kind"]]
+    if set(data) - relevant:
+        raise ValueError("Configuration includes fields unrelated to this lab")
     if type(data.get("qubits")) is not int or not 2 <= data["qubits"] <= 8:
         raise ValueError("Lab qubits must be integer 2–8")
     seeds = data.get("seeds", [0])
@@ -43,6 +51,27 @@ def load(path: str | Path) -> dict:
     ):
         raise ValueError("Invalid lab seed list")
     data["seeds"] = seeds
+    if data["kind"] == "qaoa":
+        edges = data.get("edges", [[i, i + 1] for i in range(data["qubits"] - 1)])
+        if (
+            not isinstance(edges, list)
+            or not edges
+            or any(
+                not isinstance(e, list)
+                or len(e) != 2
+                or any(type(v) is not int or not 0 <= v < data["qubits"] for v in e)
+                or e[0] == e[1]
+                for e in edges
+            )
+            or len({tuple(sorted(e)) for e in edges}) != len(edges)
+        ):
+            raise ValueError("Invalid or duplicate graph edges")
+    if "penalty" in data and (
+        not isinstance(data["penalty"], (int, float))
+        or not np.isfinite(data["penalty"])
+        or data["penalty"] < 0
+    ):
+        raise ValueError("Invalid discovery penalty")
     for field in ("depth", "iterations", "budget", "max_gates"):
         if field in data and (type(data[field]) is not int or not 1 <= data[field] <= 10000):
             raise ValueError(f"Invalid {field}")
