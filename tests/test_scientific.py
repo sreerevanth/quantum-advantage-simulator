@@ -58,6 +58,7 @@ def test_rbm_convergence_reproducibility():
     a = nqs.train(ham, 2, 0, steps=180)
     b = nqs.train(ham, 2, 0, steps=180)
     assert np.array_equal(a["state"], b["state"])
+    assert np.allclose(nqs.state_from_parameters(a["parameters"]), a["state"])
     assert metrics.fidelity(a["state"], reference) > 0.999
     assert abs(exact.expectation(a["state"], ham) + np.sqrt(5)) < 1e-3
     assert nqs.sample(a["state"], 50).shape == (50,)

@@ -14,6 +14,8 @@ def vqe(
     ansatz: str = "ry",
     optimizer: str = "BFGS",
 ) -> dict:
+    if not 1 <= n <= 12 or depth < 1 or iterations < 1 or matrix.shape != (2**n, 2**n):
+        raise ValueError("Invalid VQE system or optimization budget")
     try:
         import pennylane as qml
     except ImportError as exc:
@@ -78,6 +80,8 @@ def vqe(
 def qaoa(
     n: int, edges: list[list[int]], seed: int = 0, depth: int = 2, iterations: int = 100
 ) -> dict:
+    if depth < 1 or iterations < 1:
+        raise ValueError("QAOA depth and iterations must be positive")
     import pennylane as qml
 
     if (

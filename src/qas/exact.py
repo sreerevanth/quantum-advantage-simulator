@@ -57,6 +57,10 @@ def normalize(state: np.ndarray) -> np.ndarray:
 
 def expectation(state: np.ndarray, observable: np.ndarray) -> float:
     state = normalize(state)
+    if observable.shape != (state.size, state.size) or not np.isfinite(observable).all():
+        raise ValueError("Observable must be finite and match state dimensions")
+    if not np.allclose(observable, observable.conj().T, atol=1e-12, rtol=0):
+        raise ValueError("Observable must be Hermitian")
     value = np.vdot(state, observable @ state)
     if abs(value.imag) > 1e-9:
         raise ValueError("Expected a Hermitian observable")

@@ -44,6 +44,7 @@ def environment(config: dict) -> dict:
 
 def create(root: str | Path, config: dict) -> Path:
     import re
+
     if not isinstance(config.get("experiment_id"), str) or not re.fullmatch(
         r"[a-z0-9][a-z0-9-]{0,63}", config["experiment_id"]
     ):
@@ -82,7 +83,9 @@ def write_results(run: Path, rows: list[dict], config: dict) -> None:
                     }
                 )
     expected = {(n, "exact", None) for n in config["qubits"]} | {
-        (n, method, seed) for n in config["qubits"] for method in ("nqs", "vqe")
+        (n, method, seed)
+        for n in config["qubits"]
+        for method in ("nqs", "vqe")
         for seed in config["seeds"]
     }
     observed = [(r["qubits"], r["method"], r.get("seed")) for r in rows]
