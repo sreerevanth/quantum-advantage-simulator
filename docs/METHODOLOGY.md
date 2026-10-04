@@ -1,0 +1,17 @@
+# Methodology
+
+Measure first. Claim second. TFIM is H = -J sum ZZ - h sum X; isotropic Heisenberg is H = J sum (XX+YY+ZZ) - h sum Z, using Pauli matrices rather than spin-half operators. Wire 0 is the most significant basis bit. Open chains have n-1 bonds; periodic chains add (n-1,0) only for n>2, counting an undirected two-site bond once.
+
+Exact reference uses SciPy Hermitian diagonalisation, complex128, sorted spectra. Tests independently construct QuTiP matrices and compare analytical tiny systems. In degenerate ground spaces, single-vector fidelity is basis-dependent; inspect the saved spectral gap before drawing conclusions.
+
+RBM log amplitudes are a dot spins + sum log(2 cosh(b + spins W)). Parameters are real float64 and seeded locally. Normalization enumerates all 2^n amplitudes with a log shift; energy and gradients use exact full sums and Torch Adam. This is a positive-wavefunction baseline suitable for the locked stoquastic TFIM, not scalable Monte Carlo VMC or a general complex NQS. Categorical state sampling is available independently. Stop after the locked steps or ten-step energy range below tolerance after twenty steps. Saved NPZ parameters are numeric and require no pickle.
+
+VQE prepares layered RY (or Rot) rotations followed by nearest-neighbor CNOT chains on PennyLane default.qubit. SciPy BFGS/L-BFGS-B optimizes exact expectations using autograd gradients. Initialization uses an independent NumPy seed. Iteration and gradient tolerance are locked; optimizer termination status is retained rather than interpreted as proof of accuracy. No finite-shot or QPU VQE is claimed.
+
+Metrics use normalized complex vectors: squared overlap, absolute energy error, relative error (null for nearly zero reference energy), longitudinal and transverse magnetization errors. Seed standard deviation uses ddof=1; single-seed standard deviation is null. Runtime is end-to-end method time with tracemalloc instrumentation and setup overhead. Python peak allocation excludes some native/GPU memory. These times cannot establish hardware or scaling advantage.
+
+The registered accuracy hypothesis requires BOTH energy error <=0.05 and fidelity >=0.95 for EVERY NQS/VQE seed and size. Full coverage of the locked identities is required. Missing evaluations yield INCONCLUSIVE, any failed complete-contract evaluation yields NOT_SUPPORTED. SUPPORTED refers only to this accuracy hypothesis. Negative outcomes remain in the record.
+
+Noise is a post-preparation tensor product local Pauli channel on an exact density matrix: bit flip (1-p)rho+p XrhoX; depolarizing (1-p)rho+p/3 sum P rho P. Readout flip is limited to computational-basis diagonal observables. This is a controlled analytic model, not gate-resolved device noise. Richardson extrapolation scales channel probability and cancels polynomial orders, not Mitiq gate folding. Overhead reports evaluations, time, and equal-shot coefficient variance multiplier; actual sampling overhead is NOT EXECUTED.
+
+QAOA compares expected cut against exhaustive bitstring cuts, using Hadamard initialization, ZZ cost and RX mixer layers. Discovery uses H/RY/CNOT, random generation, replacement/insertion/deletion mutation, elite population selection, and fidelity minus weighted gates+depth. Random and evolutionary methods receive identical fitness evaluation budgets. A fixed Bell circuit is a human baseline, whose single evaluation is explicitly reported. No discovery advantage is registered or inferred.

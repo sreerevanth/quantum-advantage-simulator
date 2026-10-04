@@ -1,0 +1,38 @@
+{
+  "source_revision": "bc458b05407c4f6c75647d3e98f5c4dd5f9cae16",
+  "note": "States regenerated from original numeric parameter checkpoints; measured metrics untouched",
+  "checks": [
+    {
+      "file": "nqs-2-0.npz",
+      "energy_replay_difference": 4.440892098500626e-16
+    },
+    {
+      "file": "nqs-2-1.npz",
+      "energy_replay_difference": 4.440892098500626e-16
+    },
+    {
+      "file": "vqe-2-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-2-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-3-0.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "nqs-3-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-1.npz",
+      "energy_replay_difference": 0.0
+    }
+  ]
+}

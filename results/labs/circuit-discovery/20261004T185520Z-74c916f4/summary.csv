@@ -1,0 +1,6 @@
+discovery_advantage,objective,penalty,runtime_seconds,seed
+NOT TESTED: no pre-registered multi-seed advantage criterion,fidelity - penalty*(gate count + scheduled depth),0.001,0.40368089999537915,0
+NOT TESTED: no pre-registered multi-seed advantage criterion,fidelity - penalty*(gate count + scheduled depth),0.001,0.3334564999968279,1
+NOT TESTED: no pre-registered multi-seed advantage criterion,fidelity - penalty*(gate count + scheduled depth),0.001,0.33339689997956157,2
+NOT TESTED: no pre-registered multi-seed advantage criterion,fidelity - penalty*(gate count + scheduled depth),0.001,0.34485310001764446,3
+NOT TESTED: no pre-registered multi-seed advantage criterion,fidelity - penalty*(gate count + scheduled depth),0.001,0.2889847999904305,4

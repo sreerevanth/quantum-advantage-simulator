@@ -1,0 +1,12 @@
+budget: 200
+experiment_id: circuit-discovery
+kind: discover
+max_gates: 8
+penalty: 0.001
+qubits: 2
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4

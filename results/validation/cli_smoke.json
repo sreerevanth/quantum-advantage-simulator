@@ -1,0 +1,114 @@
+[
+  {
+    "args": [
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "exact",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "nqs",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "vqe",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "benchmark",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "noise",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "mitigate",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "qaoa",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "discover",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "experiment",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "results",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "doctor",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "validate",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "exact",
+      "--config",
+      "missing.yaml"
+    ],
+    "returncode": 2,
+    "expected": 2
+  }
+]

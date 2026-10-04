@@ -1,0 +1,7 @@
+experiment_id: noise-sweep
+kind: noise
+qubits: 2
+seeds: [0]
+probabilities: [0.01, 0.03, 0.05, 0.1, 0.2]
+scales: [1, 2, 3]
+channel: depolarizing

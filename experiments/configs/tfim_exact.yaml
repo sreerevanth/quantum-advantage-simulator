@@ -1,0 +1,3 @@
+experiment_id: tfim-exact
+qubits: [2, 4, 6, 8]
+seeds: [0]

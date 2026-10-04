@@ -1,0 +1,5 @@
+experiment_id: tfim-smoke
+qubits: [2, 3]
+seeds: [0, 1]
+nqs_steps: 150
+vqe_iterations: 80

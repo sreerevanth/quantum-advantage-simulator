@@ -1,0 +1,30 @@
+{
+  "python": "3.12.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "cpu": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "gpu": {
+    "available": false,
+    "cuda": null
+  },
+  "packages": {
+    "contourpy": "1.4.0",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.1",
+    "kiwisolver": "1.5.1",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.3",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pip": "24.0",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "2.9.0.post0",
+    "PyYAML": "6.0.3",
+    "quantum-advantage-simulator": "0.1.0",
+    "scipy": "1.18.1",
+    "six": "1.17.0"
+  },
+  "git_sha": "bc458b05407c4f6c75647d3e98f5c4dd5f9cae16",
+  "git_dirty": true,
+  "timestamp": "2026-10-04T19:11:21.253347+00:00",
+  "config_sha256": "2ba3ca618ca51e8f32f1e5040c3ca0baaca838dcf18f70efb83b653c84850dab"
+}

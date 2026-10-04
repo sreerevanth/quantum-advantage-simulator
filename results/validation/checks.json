@@ -1,0 +1,70 @@
+{
+  "lint": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "ruff",
+      "check",
+      "."
+    ],
+    "returncode": 0
+  },
+  "format": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "ruff",
+      "format",
+      "--check",
+      "."
+    ],
+    "returncode": 0
+  },
+  "types": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "mypy",
+      "src/qas"
+    ],
+    "returncode": 0
+  },
+  "tests": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "-q",
+      "--cov=qas",
+      "--cov-report=term-missing",
+      "--cov-report=json:results/validation/coverage.json"
+    ],
+    "returncode": 0
+  },
+  "dependencies": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "returncode": 0
+  },
+  "build": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "build"
+    ],
+    "returncode": 0
+  },
+  "cli": {
+    "command": [
+      "D:\\quantum\\.venv\\Scripts\\python.exe",
+      "-m",
+      "qas.cli",
+      "--help"
+    ],
+    "returncode": 0
+  }
+}

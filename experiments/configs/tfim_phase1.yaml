@@ -1,0 +1,16 @@
+experiment_id: tfim-phase1
+qubits: [2, 3, 4, 5, 6, 7, 8]
+seeds: [0, 1, 2, 3, 4]
+j: 1.0
+h: 1.0
+boundary: open
+nqs_steps: 300
+nqs_lr: 0.03
+nqs_hidden: 0
+vqe_depth: 3
+vqe_iterations: 150
+vqe_ansatz: ry
+vqe_optimizer: BFGS
+tolerance: 0.000000001
+energy_error_max: 0.05
+fidelity_min: 0.95

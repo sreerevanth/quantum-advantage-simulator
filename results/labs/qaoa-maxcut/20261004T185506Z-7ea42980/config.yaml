@@ -1,0 +1,18 @@
+depth: 2
+edges:
+- - 0
+  - 1
+- - 1
+  - 2
+- - 0
+  - 2
+experiment_id: qaoa-maxcut
+iterations: 100
+kind: qaoa
+qubits: 3
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4

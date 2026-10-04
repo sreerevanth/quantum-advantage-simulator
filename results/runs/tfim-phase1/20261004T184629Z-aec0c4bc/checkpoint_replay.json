@@ -1,0 +1,286 @@
+{
+  "source_revision": "f51a3ccb3521f3401d64353abaa05c0cd22b090e",
+  "note": "States regenerated from original numeric parameter checkpoints; measured metrics untouched",
+  "checks": [
+    {
+      "file": "nqs-2-0.npz",
+      "energy_replay_difference": 4.440892098500626e-16
+    },
+    {
+      "file": "nqs-2-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-2-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-2-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-2-4.npz",
+      "energy_replay_difference": 4.440892098500626e-16
+    },
+    {
+      "file": "vqe-2-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-2-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-2-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-2-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-2-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-3-0.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "nqs-3-1.npz",
+      "energy_replay_difference": 4.440892098500626e-16
+    },
+    {
+      "file": "nqs-3-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-3-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-3-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-3-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-4-0.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-4-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-4-2.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "nqs-4-3.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-4-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-4-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-4-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-4-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-4-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-4-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-5-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-5-1.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "nqs-5-2.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-5-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-5-4.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "vqe-5-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-5-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-5-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-5-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-5-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-6-0.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-6-1.npz",
+      "energy_replay_difference": 8.881784197001252e-16
+    },
+    {
+      "file": "nqs-6-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-6-3.npz",
+      "energy_replay_difference": 4.440892098500626e-15
+    },
+    {
+      "file": "nqs-6-4.npz",
+      "energy_replay_difference": 3.552713678800501e-15
+    },
+    {
+      "file": "vqe-6-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-6-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-6-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-6-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-6-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-7-0.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-7-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-7-2.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-7-3.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-7-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-7-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-7-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-7-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-7-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-7-4.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-8-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-8-1.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "nqs-8-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "nqs-8-3.npz",
+      "energy_replay_difference": 3.552713678800501e-15
+    },
+    {
+      "file": "nqs-8-4.npz",
+      "energy_replay_difference": 1.7763568394002505e-15
+    },
+    {
+      "file": "vqe-8-0.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-8-1.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-8-2.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-8-3.npz",
+      "energy_replay_difference": 0.0
+    },
+    {
+      "file": "vqe-8-4.npz",
+      "energy_replay_difference": 0.0
+    }
+  ]
+}
