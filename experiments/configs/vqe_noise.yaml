@@ -1,0 +1,10 @@
+experiment_id: vqe-noise
+kind: mitigate
+qubits: 2
+seeds: [0, 1, 2, 3, 4]
+preparation: vqe
+vqe_depth: 3
+vqe_iterations: 100
+probabilities: [0.01, 0.05, 0.1]
+scales: [1, 2, 3]
+channel: bit_flip

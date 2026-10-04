@@ -124,4 +124,7 @@ def qaoa(
         "history": history,
         "iterations": int(result.nit),
         "gate_count": n + depth * (n + len(edges)),
+        "circuit_depth_upper_bound": 1 + depth * (len(edges) + 1),
+        "optimizer_success": bool(result.success),
+        "optimizer_message": str(result.message),
     }

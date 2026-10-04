@@ -27,14 +27,31 @@ def load(path: str | Path) -> dict:
         "budget",
         "max_gates",
         "penalty",
+        "preparation",
+        "vqe_depth",
+        "vqe_iterations",
     }
     if not isinstance(data, dict) or set(data) - allowed:
         raise ValueError("Lab config must be a mapping with recognized keys")
     if data.get("kind") not in ("noise", "mitigate", "qaoa", "discover"):
         raise ValueError("Unknown lab kind")
     relevant = {"experiment_id", "kind", "qubits", "seeds"} | {
-        "noise": {"probabilities", "scales", "channel"},
-        "mitigate": {"probabilities", "scales", "channel"},
+        "noise": {
+            "probabilities",
+            "scales",
+            "channel",
+            "preparation",
+            "vqe_depth",
+            "vqe_iterations",
+        },
+        "mitigate": {
+            "probabilities",
+            "scales",
+            "channel",
+            "preparation",
+            "vqe_depth",
+            "vqe_iterations",
+        },
         "qaoa": {"edges", "depth", "iterations"},
         "discover": {"budget", "max_gates", "penalty"},
     }[data["kind"]]
@@ -72,10 +89,12 @@ def load(path: str | Path) -> dict:
         or data["penalty"] < 0
     ):
         raise ValueError("Invalid discovery penalty")
-    for field in ("depth", "iterations", "budget", "max_gates"):
+    for field in ("depth", "iterations", "budget", "max_gates", "vqe_depth", "vqe_iterations"):
         if field in data and (type(data[field]) is not int or not 1 <= data[field] <= 10000):
             raise ValueError(f"Invalid {field}")
     if data["kind"] in ("noise", "mitigate"):
+        if data.get("preparation", "exact") not in ("exact", "vqe"):
+            raise ValueError("Noise preparation must be exact or vqe")
         probabilities = data.get("probabilities", [0.05])
         scales = data.get("scales", [1, 2, 3])
         if (
@@ -104,10 +123,15 @@ def run(config: dict, root: str | Path = "results/labs") -> Path:
     n = config["qubits"]
     if config["kind"] in ("noise", "mitigate"):
         ham = exact.hamiltonian(n)
-        state = exact.solve(ham)[1][:, 0]
-        for probability in config.get("probabilities", [0.05]):
-            rows.append(
-                noise.experiment(
+        ground = exact.solve(ham)[1][:, 0]
+        for seed in config["seeds"] if config.get("preparation") == "vqe" else [None]:
+            state = ground
+            if seed is not None:
+                state = variational.vqe(
+                    ham, n, seed, config.get("vqe_depth", 3), config.get("vqe_iterations", 100)
+                )["state"]
+            for probability in config.get("probabilities", [0.05]):
+                row = noise.experiment(
                     state,
                     ham,
                     n,
@@ -115,7 +139,15 @@ def run(config: dict, root: str | Path = "results/labs") -> Path:
                     tuple(config.get("scales", [1, 2, 3])),
                     config.get("channel", "depolarizing"),
                 )
-            )
+                row.update(
+                    {
+                        "seed": seed,
+                        "preparation": config.get("preparation", "exact"),
+                        "exact_ground_energy": exact.expectation(ground, ham),
+                        "prepared_energy_error": abs(row["ideal"] - exact.expectation(ground, ham)),
+                    }
+                )
+                rows.append(row)
         verdict = "SUPPORTED" if all(r["improvement"] > 0 for r in rows) else "NOT_SUPPORTED"
         hypothesis = "Richardson extrapolation strictly reduces analytic error at every configured noise probability."
     else:
