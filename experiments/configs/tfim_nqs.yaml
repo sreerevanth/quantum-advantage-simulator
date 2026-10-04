@@ -1,0 +1,5 @@
+experiment_id: tfim-nqs
+qubits: [2, 3]
+seeds: [0, 1, 2, 3, 4]
+nqs_steps: 300
+nqs_lr: 0.03

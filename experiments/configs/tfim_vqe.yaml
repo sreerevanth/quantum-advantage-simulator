@@ -1,0 +1,5 @@
+experiment_id: tfim-vqe
+qubits: [2, 3]
+seeds: [0, 1, 2, 3, 4]
+vqe_depth: 3
+vqe_iterations: 150

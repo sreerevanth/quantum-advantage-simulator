@@ -17,6 +17,7 @@ def main(argv=None):
         p.add_argument("--output", default="results/runs")
     for name in ("noise", "mitigate", "qaoa", "discover"):
         p = sub.add_parser(name, help=f"Run local {name} experiment")
+        p.add_argument("--config", help="Validated YAML lab configuration")
         p.add_argument("--qubits", type=int, default=2)
         p.add_argument("--seed", type=int, default=0)
         p.add_argument("--output", default="results/labs")
@@ -72,6 +73,14 @@ def main(argv=None):
 
             return pytest.main(["tests", "-q"])
         else:
+            if args.config:
+                from qas import labs
+
+                config = labs.load(args.config)
+                if config["kind"] != args.command:
+                    raise ValueError("Lab config kind must match command")
+                print(labs.run(config, args.output))
+                return 0
             from qas import artifacts, discovery, exact, noise, variational
 
             if not 2 <= args.qubits <= 8:
