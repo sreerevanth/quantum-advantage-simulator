@@ -7,7 +7,7 @@ Audit baseline: c03986e, containing only README.md and proprietary LICENSE. No c
 | TFIM / isotropic Heisenberg | VALIDATED | analytical solutions and independent QuTiP matrices/spectra |
 | RBM NQS | VALIDATED | real-positive, enumerated full Hilbert space; two-qubit convergence and deterministic seeds |
 | PennyLane VQE | VALIDATED | RY/Rot chain ansatz, SciPy BFGS/L-BFGS-B; two-qubit convergence |
-| Phase-1 runner | VALIDATED | multi-seed integration and artifacts; full experiment reported separately |
+| Phase-1 runner | VALIDATED / BENCHMARK EXECUTED | all 77 records; joint accuracy hypothesis NOT_SUPPORTED, 8 VQE failures |
 | Configuration / registry | VALIDATED | bounded YAML contracts and registry agreement |
 | Metrics / verdicts | VALIDATED | normalized complex fidelity, sample statistics, locked all-seed thresholds |
 | Provenance / checkpoints | IMPLEMENTED | environment, git, config hash, parameters and histories |

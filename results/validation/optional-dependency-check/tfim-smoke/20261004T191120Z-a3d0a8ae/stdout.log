@@ -1,0 +1,15 @@
+Run failed
+Traceback (most recent call last):
+  File "D:\quantum\.install-check\Lib\site-packages\qas\nqs.py", line 35, in train
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\quantum\.install-check\Lib\site-packages\qas\benchmarks\tfim_compare.py", line 54, in run
+    result = nqs.train(
+             ^^^^^^^^^^
+  File "D:\quantum\.install-check\Lib\site-packages\qas\nqs.py", line 37, in train
+    raise RuntimeError("Install QAS with [ml] for RBM training") from exc
+RuntimeError: Install QAS with [ml] for RBM training

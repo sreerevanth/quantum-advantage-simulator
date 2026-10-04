@@ -1,0 +1,23 @@
+usage: cli.py [-h]
+              {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate}
+              ...
+
+Command line interface for bounded local scientific experiments.
+
+positional arguments:
+  {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate}
+    exact               Run exact TFIM with provenance
+    nqs                 Run nqs TFIM with provenance
+    vqe                 Run vqe TFIM with provenance
+    benchmark           Run benchmark TFIM with provenance
+    noise               Run local noise experiment
+    mitigate            Run local mitigate experiment
+    qaoa                Run local qaoa experiment
+    discover            Run local discover experiment
+    experiment          Inspect or run the registry
+    results             Plot or combine stored artifacts
+    doctor              Report environment and optional dependencies
+    validate            Run installed scientific validation suite
+
+options:
+  -h, --help            show this help message and exit

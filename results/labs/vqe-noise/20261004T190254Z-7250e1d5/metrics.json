@@ -1,0 +1,560 @@
+{
+  "rows": [
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.2183583191184346,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.017709658381355187,
+      "mitigated_error": 0.0,
+      "improvement": 0.017709658381355187,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.2183583191184346,
+        -2.2010064316134708,
+        -2.184012314984898
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.15969580001547,
+      "mitigation_runtime_seconds": 0.0592356999986805,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 0,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.151097394356924,
+      "mitigated": -2.2360679774997867,
+      "raw_error": 0.08497058314286576,
+      "mitigated_error": 3.1086244689504383e-15,
+      "improvement": 0.08497058314286265,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.151097394356924,
+        -2.0750710831238353,
+        -2.0079890438005203
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.001378899993142113,
+      "mitigation_runtime_seconds": 0.0017030999879352748,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 0,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.0750710831238353,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.16099689437595455,
+      "mitigated_error": 0.0,
+      "improvement": 0.16099689437595455,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.0750710831238353,
+        -1.9498512763869815,
+        -1.8604085572892286
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0004847999953199178,
+      "mitigation_runtime_seconds": 0.001750499999616295,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 0,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.2183583191222573,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.017709658377532467,
+      "mitigated_error": 0.0,
+      "improvement": 0.017709658377532467,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.2183583191222573,
+        -2.201006431621039,
+        -2.184012314996134
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0007434000144712627,
+      "mitigation_runtime_seconds": 0.002230799989774823,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 1,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.151097394375266,
+      "mitigated": -2.236067977499789,
+      "raw_error": 0.08497058312452399,
+      "mitigated_error": 8.881784197001252e-16,
+      "improvement": 0.0849705831245231,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.151097394375266,
+        -2.075071083158587,
+        -2.0079890438497525
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006526999932248145,
+      "mitigation_runtime_seconds": 0.0018392999772913754,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 1,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.075071083158587,
+      "mitigated": -2.236067977499789,
+      "raw_error": 0.1609968943412028,
+      "mitigated_error": 8.881784197001252e-16,
+      "improvement": 0.1609968943412019,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.075071083158587,
+        -1.9498512764487632,
+        -1.8604085573703173
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006628999835811555,
+      "mitigation_runtime_seconds": 0.001874400011729449,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 1,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.2183583191135545,
+      "mitigated": -2.236067977499788,
+      "raw_error": 0.017709658386235283,
+      "mitigated_error": 1.7763568394002505e-15,
+      "improvement": 0.017709658386233507,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.2183583191135545,
+        -2.2010064316038096,
+        -2.1840123149705537
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0007653999782633036,
+      "mitigation_runtime_seconds": 0.0020724000059999526,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 2,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.1510973943335108,
+      "mitigated": -2.2360679774997885,
+      "raw_error": 0.08497058316627903,
+      "mitigated_error": 1.3322676295501878e-15,
+      "improvement": 0.0849705831662777,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.1510973943335108,
+        -2.0750710830794725,
+        -2.0079890437376737
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006275000050663948,
+      "mitigation_runtime_seconds": 0.0018631999846547842,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 2,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.0750710830794725,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.16099689442031728,
+      "mitigated_error": 0.0,
+      "improvement": 0.16099689442031728,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.0750710830794725,
+        -1.9498512763081146,
+        -1.8604085571857158
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006067999929655343,
+      "mitigation_runtime_seconds": 0.001930099999299273,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 2,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.2360679774997902,
+      "raw": -2.2183583191296514,
+      "mitigated": -2.236067977499791,
+      "raw_error": 0.017709658370138825,
+      "mitigated_error": 8.881784197001252e-16,
+      "improvement": 0.017709658370137937,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.2183583191296514,
+        -2.2010064316356766,
+        -2.1840123150178665
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.001035499997669831,
+      "mitigation_runtime_seconds": 0.0018631999846547842,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 3,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 4.440892098500626e-16
+    },
+    {
+      "ideal": -2.2360679774997902,
+      "raw": -2.15109739441074,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.08497058308905014,
+      "mitigated_error": 4.440892098500626e-16,
+      "improvement": 0.0849705830890497,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.15109739441074,
+        -2.075071083225801,
+        -2.0079890439449715
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006609999982174486,
+      "mitigation_runtime_seconds": 0.0021315999911166728,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 3,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 4.440892098500626e-16
+    },
+    {
+      "ideal": -2.2360679774997902,
+      "raw": -2.075071083225801,
+      "mitigated": -2.2360679774997907,
+      "raw_error": 0.16099689427398944,
+      "mitigated_error": 4.440892098500626e-16,
+      "improvement": 0.160996894273989,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.075071083225801,
+        -1.9498512765682532,
+        -1.8604085575271476
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006744999845977873,
+      "mitigation_runtime_seconds": 0.0022268999891821295,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 3,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 4.440892098500626e-16
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.2183583191178684,
+      "mitigated": -2.2360679774997876,
+      "raw_error": 0.0177096583819214,
+      "mitigated_error": 2.220446049250313e-15,
+      "improvement": 0.01770965838191918,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.2183583191178684,
+        -2.2010064316123508,
+        -2.1840123149832347
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006800999981351197,
+      "mitigation_runtime_seconds": 0.001801800011890009,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 4,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.1510973943542098,
+      "mitigated": -2.2360679774997885,
+      "raw_error": 0.08497058314558004,
+      "mitigated_error": 1.3322676295501878e-15,
+      "improvement": 0.0849705831455787,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.1510973943542098,
+        -2.0750710831186914,
+        -2.0079890437932337
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0005922999989707023,
+      "mitigation_runtime_seconds": 0.0018531999958213419,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 4,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.0750710831186914,
+      "mitigated": -2.2360679774997894,
+      "raw_error": 0.16099689438109843,
+      "mitigated_error": 4.440892098500626e-16,
+      "improvement": 0.160996894381098,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.0750710831186914,
+        -1.9498512763778375,
+        -1.860408557277227
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "bit_flip",
+      "raw_runtime_seconds": 0.0006605999951716512,
+      "mitigation_runtime_seconds": 0.0016770000220276415,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED",
+      "seed": 4,
+      "preparation": "vqe",
+      "exact_ground_energy": -2.23606797749979,
+      "prepared_energy_error": 0.0
+    }
+  ],
+  "verdict": "SUPPORTED"
+}

@@ -1,0 +1,7 @@
+budget: 10
+command: qaoa
+config: null
+experiment_id: qaoa-lab
+output: results/profile
+qubits: 2
+seed: 0

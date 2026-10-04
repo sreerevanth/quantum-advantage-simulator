@@ -1,0 +1,170 @@
+{
+  "rows": [
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.200370394498993,
+      "mitigated": -2.2360679774997894,
+      "raw_error": 0.03569758300079684,
+      "mitigated_error": 4.440892098500626e-16,
+      "improvement": 0.035697583000796396,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.200370394498993,
+        -2.1648318207765964,
+        -2.1294522563325997
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.01,
+      "kind": "depolarizing",
+      "raw_runtime_seconds": 0.0025640999956522137,
+      "mitigation_runtime_seconds": 0.006788300001062453,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.1294522563325997,
+      "mitigated": -2.2360679774997907,
+      "raw_error": 0.10661572116719009,
+      "mitigated_error": 8.881784197001252e-16,
+      "improvement": 0.1066157211671892,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.1294522563325997,
+        -2.0242676186710096,
+        -1.9205140645150196
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.03,
+      "kind": "depolarizing",
+      "raw_runtime_seconds": 0.002322999993339181,
+      "mitigation_runtime_seconds": 0.00522560000536032,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -2.0591701552798063,
+      "mitigated": -2.236067977499789,
+      "raw_error": 0.1768978222199835,
+      "mitigated_error": 8.881784197001252e-16,
+      "improvement": 0.17689782221998263,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -2.0591701552798063,
+        -1.886247565019823,
+        -1.7173002067198386
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.05,
+      "kind": "depolarizing",
+      "raw_runtime_seconds": 0.001987399999052286,
+      "mitigation_runtime_seconds": 0.11793730000499636,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -1.886247565019823,
+      "mitigated": -2.2360679774997902,
+      "raw_error": 0.34982041247996687,
+      "mitigated_error": 4.440892098500626e-16,
+      "improvement": 0.3498204124799664,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -1.886247565019823,
+        -1.5523280803798543,
+        -1.234309523579884
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.1,
+      "kind": "depolarizing",
+      "raw_runtime_seconds": 0.0019777999841608107,
+      "mitigation_runtime_seconds": 0.005353200016543269,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED"
+    },
+    {
+      "ideal": -2.23606797749979,
+      "raw": -1.5523280803798543,
+      "mitigated": -2.23606797749979,
+      "raw_error": 0.6837398971199355,
+      "mitigated_error": 0.0,
+      "improvement": 0.6837398971199355,
+      "scales": [
+        1,
+        2,
+        3
+      ],
+      "scaled_values": [
+        -1.5523280803798543,
+        -0.9321918946199124,
+        -0.37565942021996435
+      ],
+      "weights": [
+        3.000000000000001,
+        -3.0000000000000013,
+        1.0000000000000004
+      ],
+      "probability": 0.2,
+      "kind": "depolarizing",
+      "raw_runtime_seconds": 0.0019150000007357448,
+      "mitigation_runtime_seconds": 0.005869400018127635,
+      "evaluations": 3,
+      "equal_shot_variance_multiplier": 19.000000000000014,
+      "shots": null,
+      "sampling_overhead": "NOT EXECUTED: analytic expectations",
+      "method": "polynomial noise-strength Richardson extrapolation; post-state channels, no gate folding",
+      "verdict": "SUPPORTED"
+    }
+  ],
+  "verdict": "SUPPORTED"
+}

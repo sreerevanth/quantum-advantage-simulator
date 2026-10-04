@@ -50,7 +50,7 @@ The optional read-only FastAPI app is constructed with qas.api.create_app(). It 
 
 ## Reproduction and layout
 
-Runs persist config.yaml, environment.json, metrics.json, summary.csv, stdout.log, verdict.md, numeric checkpoints and figures under results/runs/EXPERIMENT/RUN. Secondary artifacts live under results/labs. Metadata includes packages, Python/platform/CPU/CUDA, git SHA/dirty flag, UTC timestamp and config hash. Checkpoints remain local or in CI uploads; measured failures are retained. Plots read stored measurements and export PNG/SVG; error bars are sample standard deviations.
+Runs persist config.yaml, environment.json, metrics.json, summary.csv, stdout.log, verdict.md, numeric checkpoints and figures under results/runs/EXPERIMENT/RUN. Secondary artifacts live under results/labs. Metadata includes packages, Python/platform/CPU/CUDA, git SHA/dirty flag, UTC timestamp and config hash. Tiny checkpoints and measured failures are retained. Plots read stored measurements and export PNG/SVG; curves show means and dots show actual evaluations. Tables report sample standard deviations.
 
 Set OMP_NUM_THREADS=1 and OPENBLAS_NUM_THREADS=1 before Python starts for small CPU workloads. Timings include tracing and cold setup and are affected by process contention; memory reports Python allocations rather than total process/GPU memory. No speedup conclusion is supported.
 

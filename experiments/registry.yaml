@@ -12,4 +12,4 @@
   resource_budget: {qubits_max: 8, nqs_steps: 300, vqe_iterations: 150, vqe_depth: 3}
   configuration: experiments/configs/tfim_phase1.yaml
   expected_artifacts: [config.yaml, environment.json, metrics.json, summary.csv, stdout.log, verdict.md, checkpoints, figures]
-  status: IMPLEMENTED
+  status: VALIDATED

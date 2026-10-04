@@ -1,0 +1,43 @@
+{
+  "rows": [
+    {
+      "method": "exact",
+      "qubits": 2,
+      "seed": null,
+      "energy": -2.23606797749979,
+      "exact_energy": -2.23606797749979,
+      "absolute_energy_error": 0.0,
+      "relative_energy_error": 0.0,
+      "fidelity": 1.0,
+      "magnetization_error": 0.0,
+      "transverse_magnetization_error": 0.0,
+      "runtime_seconds": 0.005583899997873232,
+      "python_peak_bytes": 21504,
+      "ground_gap": 1.236067977499789,
+      "history": []
+    }
+  ],
+  "seed_statistics": [
+    {
+      "qubits": 2,
+      "method": "exact",
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null
+      },
+      "runtime_seconds": {
+        "count": 1,
+        "mean": 0.005583899997873232,
+        "std": null
+      }
+    }
+  ],
+  "verdict": "INCONCLUSIVE",
+  "complete": false
+}

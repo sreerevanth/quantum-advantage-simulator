@@ -1,0 +1,2 @@
+absolute_energy_error,energy,exact_energy,fidelity,ground_gap,magnetization_error,method,python_peak_bytes,qubits,relative_energy_error,runtime_seconds,seed,transverse_magnetization_error
+0.0,-2.23606797749979,-2.23606797749979,1.0,1.236067977499789,0.0,exact,21504,2,0.0,0.005583899997873232,,0.0

@@ -30,15 +30,21 @@ def plot(run: str | Path) -> list[Path]:
             selected = [r for r in rows if r["method"] == method]
             ns = sorted({r["qubits"] for r in selected})
             values = [[r[metric] for r in selected if r["qubits"] == n] for n in ns]
-            ax.errorbar(
-                ns,
-                [np.mean(v) for v in values],
-                yerr=[np.std(v, ddof=1) if len(v) > 1 else 0 for v in values],
-                marker="o",
-                capsize=3,
-                label=method,
-            )
+            (line,) = ax.plot(ns, [np.mean(v) for v in values], marker="o", label=method)
+            for n, observations in zip(ns, values, strict=True):
+                ax.scatter(
+                    n + np.linspace(-0.07, 0.07, len(observations)),
+                    observations,
+                    color=line.get_color(),
+                    alpha=0.6,
+                    s=18,
+                )
         ax.set(xlabel="Qubits", ylabel=metric.replace("_", " "))
+        ax.set_title("Curves: means; dots: individual evaluations", fontsize=10)
+        if metric == "fidelity":
+            ax.set_ylim(-0.03, 1.03)
+        if metric in ("absolute_energy_error", "runtime_seconds"):
+            ax.set_yscale("symlog", linthresh=1e-10 if metric == "absolute_energy_error" else 1e-3)
         ax.set_xticks(sorted({r["qubits"] for r in rows}))
         ax.legend()
         ax.grid(alpha=0.2)
