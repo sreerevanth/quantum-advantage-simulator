@@ -17,7 +17,7 @@ Audit baseline: c03986e, containing only README.md and proprietary LICENSE. No c
 | Hardware simulator | VALIDATED | seeded Bell shot counts |
 | IBM adapter | VALIDATED with mocks / NOT EXECUTED live | opt-in and mocked service paths; live access requires credentials/hardware |
 | Plotting / tables / read-only API | VALIDATED | persisted-artifact integration |
-| Dashboard | NOT IMPLEMENTED | optional; plots and API provide stored evidence access |
+| Dashboard | VALIDATED | read-only saved runs, verdicts, tables and PNG figures; HTTP tests and browser verification |
 | Complex/autoregressive NQS / H2 | NOT IMPLEMENTED | future optional research extensions |
 | GPU / IBM hardware experiments | NOT EXECUTED | CPU environment; hardware access not configured |
 | Open-source release | BLOCKED | existing proprietary license retained; owner must choose open-source terms |
