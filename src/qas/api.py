@@ -16,17 +16,42 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
     root = Path(root).resolve()
 
     def runs():
-        return {
-            p.parent.name: p
-            for p in root.rglob("metrics.json")
-            if p.resolve().is_relative_to(root) and (p.parent / "config.yaml").is_file()
-        }
+        found = {}
+        for p in sorted(root.rglob("metrics.json")):
+            config = p.parent / "config.yaml"
+            if not (
+                p.resolve().is_relative_to(root)
+                and config.resolve().is_relative_to(root)
+                and config.is_file()
+            ):
+                continue
+            if p.parent.name in found:
+                raise HTTPException(409, "Duplicate run IDs in results root")
+            found[p.parent.name] = p
+        return found
 
     def payload(file):
         try:
-            return json.loads(file.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError) as exc:
+            data = json.loads(file.read_text(encoding="utf-8"))
+            if not isinstance(data, dict):
+                raise ValueError("Metrics must be an object")
+            if "rows" in data and (
+                not isinstance(data["rows"], list)
+                or any(not isinstance(row, dict) for row in data["rows"])
+            ):
+                raise ValueError("Metrics rows must be objects")
+            return data
+        except (OSError, ValueError) as exc:
             raise HTTPException(503, "Saved metrics temporarily unavailable") from exc
+
+    def configuration(file):
+        try:
+            config = yaml.safe_load(file.read_text(encoding="utf-8"))
+            if not isinstance(config, dict):
+                raise ValueError("Configuration must be a mapping")
+            return config
+        except (OSError, ValueError, yaml.YAMLError) as exc:
+            raise HTTPException(503, "Saved configuration temporarily unavailable") from exc
 
     @app.get("/", response_class=HTMLResponse)
     def dashboard():
@@ -37,7 +62,7 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
         entries = []
         for run_id, file in runs().items():
             data = payload(file)
-            config = yaml.safe_load((file.parent / "config.yaml").read_text(encoding="utf-8"))
+            config = configuration(file.parent / "config.yaml")
             entries.append(
                 {
                     "id": run_id,

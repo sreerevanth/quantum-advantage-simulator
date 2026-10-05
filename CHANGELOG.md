@@ -6,6 +6,7 @@
 - Add enumerated positive RBM, PennyLane VQE, multi-seed benchmark registry and artifact/verdict contract.
 - Add analytic local noise/Richardson extrapolation, MaxCut QAOA, restricted circuit search and simulator hardware adapter.
 - Add persisted-result plotting/tables, CLI, optional read-only API, packaging and CI.
+- Reject duplicate run IDs and return controlled errors for malformed saved evidence.
 - Add a packaged read-only dashboard for persisted run selection, metrics and figures.
 - Replace unsupported README implementation claims with executed evidence and limitations.
 

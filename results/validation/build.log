@@ -46,6 +46,7 @@ copying pyproject.toml -> quantum_advantage_simulator-0.1.0
 copying requirements-lock.txt -> quantum_advantage_simulator-0.1.0
 copying docs\ARCHITECTURE.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\CONTRIBUTING.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\DASHBOARD.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\EXPERIMENTS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\FINAL_RESEARCH_REPORT.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\HARDWARE.md -> quantum_advantage_simulator-0.1.0\docs
@@ -177,7 +178,7 @@ running install_egg_info
 Copying src\quantum_advantage_simulator.egg-info to build\bdist.win-amd64\wheel\.\quantum_advantage_simulator-0.1.0-py3.12.egg-info
 running install_scripts
 creating build\bdist.win-amd64\wheel\quantum_advantage_simulator-0.1.0.dist-info\WHEEL
-creating 'D:\\quantum\\dist\\.tmp-hzkqmewb\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+creating 'D:\\quantum\\dist\\.tmp-w_ez6qjb\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
 adding 'qas/__init__.py'
 adding 'qas/api.py'
 adding 'qas/artifacts.py'
