@@ -46,7 +46,7 @@ qas validate
 
 Noise labs use exact local post-state depolarizing/bit-flip channels and Richardson noise-strength extrapolation. They do not model complete device noise or sampled gate folding. MaxCut has an exhaustive classical reference. Evolutionary/random search receive equal fitness evaluation budgets; a fixed human Bell circuit is separately reported. Secondary labs remain separate from Phase-1 evidence.
 
-The optional read-only FastAPI app is constructed with qas.api.create_app(). It exposes /health, /experiments, /experiments/{id}, /runs, /runs/{id}, /results/summary. Registry workflows and validation commands expect a checkout with configs/tests. The optional dashboard is not implemented.
+The optional read-only FastAPI app is constructed with qas.api.create_app(). It exposes /health, /experiments, /experiments/{id}, /runs, /runs/{id}, /results/summary. Registry workflows and validation commands expect a checkout with configs/tests. The packaged dashboard at `/` displays saved runs, verdicts, tables and figures. Start it with `python -m uvicorn qas.api:create_app --factory --host 127.0.0.1 --port 8765`, then open http://127.0.0.1:8765. See [dashboard instructions](docs/DASHBOARD.md).
 
 ## Reproduction and layout
 
@@ -60,7 +60,7 @@ Set OMP_NUM_THREADS=1 and OPENBLAS_NUM_THREADS=1 before Python starts for small 
 - results: runs, plots, tables and validation evidence.
 - docs: architecture, methodology, reproducibility, results and reports.
 
-Dense exact references and enumerated RBM scale exponentially. RBM is real-positive, not a general complex NQS. VQE is noiseless/analytic. Finite-shot/QPU VQE, GPU experiments, chemistry, autoregressive/transformer NQS and dashboard are NOT EXECUTED or future extensions. IBM opt-in and mocked service paths are tested; live access remains BLOCKED pending credentials/hardware. See [status](docs/IMPLEMENTATION_STATUS.md), [hardware](docs/HARDWARE.md), [reproducibility](docs/REPRODUCIBILITY.md), and [architecture](docs/ARCHITECTURE.md).
+Dense exact references and enumerated RBM scale exponentially. RBM is real-positive, not a general complex NQS. VQE is noiseless/analytic. Finite-shot/QPU VQE, GPU experiments, chemistry, autoregressive/transformer NQS are NOT EXECUTED or future extensions. IBM opt-in and mocked service paths are tested; live access remains BLOCKED pending credentials/hardware. See [status](docs/IMPLEMENTATION_STATUS.md), [hardware](docs/HARDWARE.md), [reproducibility](docs/REPRODUCIBILITY.md), and [architecture](docs/ARCHITECTURE.md).
 
 ## Development, citation and license
 

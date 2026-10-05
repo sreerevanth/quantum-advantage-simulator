@@ -47,10 +47,13 @@ copying requirements-lock.txt -> quantum_advantage_simulator-0.1.0
 copying docs\ARCHITECTURE.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\CONTRIBUTING.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\EXPERIMENTS.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\FINAL_RESEARCH_REPORT.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\HARDWARE.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\IMPLEMENTATION_STATUS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\METHODOLOGY.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\REPRODUCIBILITY.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\RESULTS.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\VALIDATION.md -> quantum_advantage_simulator-0.1.0\docs
 copying experiments\registry.yaml -> quantum_advantage_simulator-0.1.0\experiments
 copying experiments\configs\discovery.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\noise_sweep.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
@@ -67,6 +70,7 @@ copying src\qas\api.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\artifacts.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\cli.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\config.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\dashboard.html -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\discovery.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\exact.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\hardware.py -> quantum_advantage_simulator-0.1.0\src\qas
@@ -86,6 +90,7 @@ copying src\quantum_advantage_simulator.egg-info\entry_points.txt -> quantum_adv
 copying src\quantum_advantage_simulator.egg-info\requires.txt -> quantum_advantage_simulator-0.1.0\src\quantum_advantage_simulator.egg-info
 copying src\quantum_advantage_simulator.egg-info\top_level.txt -> quantum_advantage_simulator-0.1.0\src\quantum_advantage_simulator.egg-info
 copying tests\test_circuits.py -> quantum_advantage_simulator-0.1.0\tests
+copying tests\test_dashboard.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_labs.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_platform.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_robustness.py -> quantum_advantage_simulator-0.1.0\tests
@@ -143,6 +148,7 @@ reading manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 adding license file 'LICENSE'
 writing manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
+copying src\qas\dashboard.html -> build\lib\qas
 installing to build\bdist.win-amd64\wheel
 running install
 running install_lib
@@ -155,6 +161,7 @@ copying build\lib\qas\benchmarks\tfim_compare.py -> build\bdist.win-amd64\wheel\
 copying build\lib\qas\benchmarks\__init__.py -> build\bdist.win-amd64\wheel\.\qas\benchmarks
 copying build\lib\qas\cli.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\config.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\dashboard.html -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\discovery.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\exact.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\hardware.py -> build\bdist.win-amd64\wheel\.\qas
@@ -170,12 +177,13 @@ running install_egg_info
 Copying src\quantum_advantage_simulator.egg-info to build\bdist.win-amd64\wheel\.\quantum_advantage_simulator-0.1.0-py3.12.egg-info
 running install_scripts
 creating build\bdist.win-amd64\wheel\quantum_advantage_simulator-0.1.0.dist-info\WHEEL
-creating 'D:\\quantum\\dist\\.tmp-2f4cznwd\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+creating 'D:\\quantum\\dist\\.tmp-hzkqmewb\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
 adding 'qas/__init__.py'
 adding 'qas/api.py'
 adding 'qas/artifacts.py'
 adding 'qas/cli.py'
 adding 'qas/config.py'
+adding 'qas/dashboard.html'
 adding 'qas/discovery.py'
 adding 'qas/exact.py'
 adding 'qas/hardware.py'
