@@ -80,12 +80,23 @@ def vqe(
 
     history = []
 
+    cache = {}
+
     def objective(params):
-        value = float(cost(params))
-        return value
+        if "point" not in cache or not np.array_equal(params, cache["point"]):
+            cache.clear()
+            cache["point"] = np.array(params, copy=True)
+        if "value" not in cache:
+            cache["value"] = float(cost(params))
+        return cache["value"]
 
     def gradient(params):
-        return np.asarray(qml.grad(cost)(qml.numpy.array(params, requires_grad=True)), dtype=float)
+        objective(params)
+        if "gradient" not in cache:
+            cache["gradient"] = np.asarray(
+                qml.grad(cost)(qml.numpy.array(params, requires_grad=True)), dtype=float
+            )
+        return cache["gradient"].copy()
 
     rng = np.random.default_rng(seed)
     if initialization not in ("normal", "uniform", "plus", "small"):

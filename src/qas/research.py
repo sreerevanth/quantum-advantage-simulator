@@ -4,7 +4,6 @@ import csv
 import hashlib
 import json
 import time
-import tracemalloc
 from functools import lru_cache
 from pathlib import Path
 
@@ -13,6 +12,7 @@ import yaml
 
 from qas import artifacts, exact, metrics
 from qas.integrity import atomic_json, digest, seal, verify
+from qas.resources import MemorySampler
 
 
 @lru_cache(maxsize=20)
@@ -364,25 +364,24 @@ def run(full=False, seed=0, device="cpu", output="results/research", resume=None
         else:
             print(f"{index + 1}/{len(jobs)} {job}", flush=True)
             start = time.perf_counter()
-            tracemalloc.start()
             try:
-                result = evaluate(job, checkpoints)
-                peak = tracemalloc.get_traced_memory()[1]
+                with MemorySampler() as memory:
+                    result = evaluate(job, checkpoints)
+                peak = memory.peak
             except Exception as exc:
                 atomic_json(
                     directory / "failure.json",
                     dict(job=job, error_type=type(exc).__name__, message=str(exc)),
                 )
                 raise
-            finally:
-                tracemalloc.stop()
             row = {
                 **job,
                 **result,
                 "job_id": key,
                 "wall_seconds": time.perf_counter() - start,
-                "python_peak_bytes": peak,
-                "memory_scope": "tracemalloc Python allocations; explicit dense buffer sizes for scaling",
+                "peak_memory_bytes": peak,
+                "rss_start_bytes": memory.start,
+                "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks",
             }
             record = dict(
                 job=job,
@@ -456,7 +455,7 @@ def summarize(directory, rows):
             "equal_budget_raw_error",
             "approximation_ratio",
             "wall_seconds",
-            "python_peak_bytes",
+            "peak_memory_bytes",
         ):
             values = [r[metric] for r in selected if metric in r]
             if values:
