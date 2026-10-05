@@ -37,9 +37,36 @@ def main(argv=None):
     p.add_argument("--output", default="results/tables/combined.csv")
     sub.add_parser("doctor", help="Report environment and optional dependencies")
     sub.add_parser("validate", help="Run installed scientific validation suite")
+    p = sub.add_parser("suite", help="Run/resume the complete practical research suite")
+    mode = p.add_mutually_exclusive_group()
+    mode.add_argument("--quick", action="store_true")
+    mode.add_argument("--full", action="store_true")
+    p.add_argument("--device", choices=["cpu", "cuda", "auto"], default="cpu")
+    p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--output", default="results/research")
+    p.add_argument("--resume", help="Existing run directory, with matching options")
+    p = sub.add_parser("verify", help="Verify sealed evidence checksums")
+    p.add_argument("path")
+    p = sub.add_parser("hardware", help="Explicit IBM Bell validation or resume existing job")
+    p.add_argument("--backend", required=True)
+    p.add_argument("--shots", type=int, default=1000)
+    p.add_argument("--job-id")
+    p.add_argument("--output", default="results/hardware")
     args = parser.parse_args(argv)
     try:
-        if args.command in ("exact", "nqs", "vqe", "benchmark"):
+        if args.command == "suite":
+            from qas.research import run as run_suite
+
+            print(run_suite(args.full, args.seed, args.device, args.output, args.resume))
+        elif args.command == "verify":
+            from qas.integrity import verify
+
+            print(json.dumps(verify(args.path)))
+        elif args.command == "hardware":
+            from qas.hardware import validation
+
+            print(validation(args.backend, args.shots, args.output, args.job_id))
+        elif args.command in ("exact", "nqs", "vqe", "benchmark"):
             from qas.benchmarks.tfim_compare import run
 
             methods = ("exact", "nqs", "vqe") if args.command == "benchmark" else (args.command,)
@@ -84,7 +111,7 @@ def main(argv=None):
             from qas import artifacts, discovery, exact, noise, variational
 
             if not 2 <= args.qubits <= 8:
-                raise ValueError("Local labs support 2–8 qubits")
+                raise ValueError("Local labs support 2Ã¢â‚¬â€œ8 qubits")
             config = vars(args).copy()
             config["experiment_id"] = args.command + "-lab"
             directory = artifacts.create(args.output, config)

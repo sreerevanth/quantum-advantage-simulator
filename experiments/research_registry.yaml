@@ -1,0 +1,14 @@
+experiment_id: research-full
+configuration: experiments/configs/research_full.yaml
+purpose: Exploratory controlled comparisons; original locked benchmark retained
+accuracy_criterion:
+  absolute_energy_error_max: 0.05
+  fidelity_min: 0.95
+mitigation_comparison: absolute error and equal-total-shot raw comparator; count every
+  seed, including harm
+discovery_comparison: same evaluations per random/evolutionary method; fixed human
+  circuit evaluated separately
+statistics: descriptive seed summaries; approximate Student-t mean CI only n>=5; no
+  significance tests
+scaling_boundary: 10-qubit dense reference and NQS; 8-qubit VQE; CPU memory/time budget,
+  not a measured impossibility boundary
