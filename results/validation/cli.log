@@ -1,11 +1,11 @@
 usage: cli.py [-h]
-              {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate}
+              {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate,suite,verify,hardware}
               ...
 
 Command line interface for bounded local scientific experiments.
 
 positional arguments:
-  {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate}
+  {exact,nqs,vqe,benchmark,noise,mitigate,qaoa,discover,experiment,results,doctor,validate,suite,verify,hardware}
     exact               Run exact TFIM with provenance
     nqs                 Run nqs TFIM with provenance
     vqe                 Run vqe TFIM with provenance
@@ -18,6 +18,9 @@ positional arguments:
     results             Plot or combine stored artifacts
     doctor              Report environment and optional dependencies
     validate            Run installed scientific validation suite
+    suite               Run/resume the complete practical research suite
+    verify              Verify sealed evidence checksums
+    hardware            Explicit IBM Bell validation or resume existing job
 
 options:
   -h, --help            show this help message and exit

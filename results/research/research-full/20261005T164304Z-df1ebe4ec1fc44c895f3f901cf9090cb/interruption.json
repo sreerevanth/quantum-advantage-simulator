@@ -1,0 +1,4 @@
+{
+  "reason": "Stopped after profiling showed allocation tracing materially dominates VQE runtime. All completed rows retained. A new full run will use sampled process RSS; no evidence overwritten.",
+  "status": "INCONCLUSIVE"
+}

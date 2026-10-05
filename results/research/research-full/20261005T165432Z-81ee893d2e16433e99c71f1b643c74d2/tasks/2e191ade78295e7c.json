@@ -1,0 +1,46 @@
+{
+  "job": {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 4,
+    "distance": 2.0
+  },
+  "row": {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 4,
+    "distance": 2.0,
+    "energy": -1.0884963088623882,
+    "exact_energy": -1.0884963088623882,
+    "absolute_energy_error": 0.0,
+    "fidelity": 1.0,
+    "hartree_fock_energy": -1.0491709026155325,
+    "distance_bohr": 2.0,
+    "basis": "STO-3G",
+    "mapping": "Jordan-Wigner",
+    "electrons": 2,
+    "spin_orbitals": 4,
+    "active_space": "all two spatial orbitals; two-electron sector",
+    "units": "Hartree",
+    "reference": "PennyLane differentiable HF integrals + NumPy sector diagonalization",
+    "ansatz": "HF |1100> + particle-conserving DoubleExcitation",
+    "parameters": [
+      0.3873138617060051
+    ],
+    "iterations": 4,
+    "optimizer_success": false,
+    "history": [
+      -1.0756563591867714,
+      -1.0884598207286713,
+      -1.0884963066965894,
+      -1.0884963088623882
+    ],
+    "job_id": "2e191ade78295e7c",
+    "wall_seconds": 2.6569713999633677,
+    "peak_memory_bytes": 425881600,
+    "rss_start_bytes": 425828352,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "a8bade638f4c5d3037001c9d94fa646138f59ecd6963f424a9d0ebc6ca0febc6",
+  "checkpoints": {}
+}

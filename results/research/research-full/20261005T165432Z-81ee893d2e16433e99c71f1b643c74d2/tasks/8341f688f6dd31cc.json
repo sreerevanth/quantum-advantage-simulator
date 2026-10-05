@@ -1,0 +1,95 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 19,
+    "shots": 1000,
+    "parameters": [
+      0.9616772184218617,
+      0.3158508425770105,
+      -0.6858503981396237,
+      0.9309122733133147,
+      1.7903001597593582,
+      0.8538762918526454
+    ],
+    "parameter_count": 6,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.0,
+      "variance": 0.0
+    },
+    "expected_cut": 3.999999999999911,
+    "exact_cut": 4,
+    "approximation_ratio": 0.9999999999999778,
+    "history": [
+      3.3307835645563975,
+      3.4842745290898436,
+      3.7312293869719477,
+      3.8508376877989585,
+      3.8830239547175993,
+      3.890121904622903,
+      3.8960528360055124,
+      3.9066123852038244,
+      3.9252371827242207,
+      3.9445503321130198,
+      3.9713366982098197,
+      3.99404935334774,
+      3.999690159498352,
+      3.9998943031697296,
+      3.9999842572986033,
+      3.9999993500175437,
+      3.999999990628691,
+      3.999999999924504,
+      3.999999999999911
+    ],
+    "function_evaluations": 175,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 35,
+    "circuit_depth_upper_bound": 19,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "job_id": "8341f688f6dd31cc",
+    "wall_seconds": 1.0730403999914415,
+    "peak_memory_bytes": 423235584,
+    "rss_start_bytes": 423215104,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "0643da9e0ee6409c5c532d10124eab2df0f6c5197ffd0e302495d2ca2c448026",
+  "checkpoints": {}
+}

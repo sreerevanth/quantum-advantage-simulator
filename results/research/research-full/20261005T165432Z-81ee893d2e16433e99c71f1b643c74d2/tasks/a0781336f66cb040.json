@@ -1,0 +1,101 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 9,
+    "shots": 1000,
+    "parameters": [
+      0.41353091444230655,
+      0.26530885630063666
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 5.902,
+      "variance": 0.000546942942942943
+    },
+    "expected_cut": 5.905211820555389,
+    "exact_cut": 6,
+    "approximation_ratio": 0.9842019700925649,
+    "history": [
+      5.417309588168127,
+      5.665809711970885,
+      5.8821896160511,
+      5.899576465358409,
+      5.904667381855678,
+      5.90519675910784,
+      5.90521177176759,
+      5.905211820511488,
+      5.905211820555389
+    ],
+    "function_evaluations": 36,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 20,
+    "circuit_depth_upper_bound": 12,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "a0781336f66cb040",
+    "wall_seconds": 0.1583853000192903,
+    "peak_memory_bytes": 424226816,
+    "rss_start_bytes": 424198144,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "644663208ff30d2affc639acadaddd7d543934fccb664c6ce613e9364c0876c4",
+  "checkpoints": {}
+}

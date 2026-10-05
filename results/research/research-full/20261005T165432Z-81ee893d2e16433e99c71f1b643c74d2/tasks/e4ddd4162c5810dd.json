@@ -1,0 +1,105 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 23,
+    "shots": 1000,
+    "parameters": [
+      -0.4775532802459044,
+      1.6139172222475409,
+      -0.2606465107033926,
+      0.19362967411332868
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.741,
+      "variance": 0.00030222122122122117
+    },
+    "expected_cut": 4.742640634706514,
+    "exact_cut": 5,
+    "approximation_ratio": 0.9485281269413027,
+    "history": [
+      4.069951687514055,
+      4.182399799540249,
+      4.204475228379966,
+      4.358588703791096,
+      4.488140818289139,
+      4.503380433102338,
+      4.532537299982276,
+      4.58398339005162,
+      4.640804329107607,
+      4.659467040017508,
+      4.665270628100194,
+      4.6754024845526505,
+      4.692279556524728,
+      4.715589958795854,
+      4.730865649330498,
+      4.740995129827089,
+      4.742372642083354,
+      4.7425798720658685,
+      4.7426331290073005,
+      4.74264003711411,
+      4.742640622908246,
+      4.742640634694341,
+      4.742640634706514
+    ],
+    "function_evaluations": 150,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 29,
+    "circuit_depth_upper_bound": 17,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "e4ddd4162c5810dd",
+    "wall_seconds": 1.0264872999978252,
+    "peak_memory_bytes": 424091648,
+    "rss_start_bytes": 424026112,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "e1695d5e1a3ab447566d63766e58b9d2ec242df9ba24c3d502d19a5133b67985",
+  "checkpoints": {}
+}

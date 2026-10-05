@@ -1,0 +1,90 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 16,
+    "shots": 1000,
+    "parameters": [
+      0.524776418472642,
+      1.1030932374232583,
+      0.5515467377061161,
+      0.26238857311909547
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.0,
+      "variance": 0.0
+    },
+    "expected_cut": 3.999999999999571,
+    "exact_cut": 4,
+    "approximation_ratio": 0.9999999999998928,
+    "history": [
+      3.78092789408659,
+      3.8131847699693697,
+      3.826405910552612,
+      3.887168344393263,
+      3.8952349622671942,
+      3.9088771275645833,
+      3.9318039215066083,
+      3.968322057998697,
+      3.9970708441897003,
+      3.9986790524001874,
+      3.999868482127833,
+      3.999952117926836,
+      3.99997675733167,
+      3.999998920140535,
+      3.999999998363867,
+      3.999999999999571
+    ],
+    "function_evaluations": 110,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 25,
+    "circuit_depth_upper_bound": 13,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "job_id": "4f311c582798faca",
+    "wall_seconds": 0.529090299969539,
+    "peak_memory_bytes": 422875136,
+    "rss_start_bytes": 422658048,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "f1ace26cad8faf3465bee2a6b263901e251882d9eae3145a7ef4419a4c42997e",
+  "checkpoints": {}
+}

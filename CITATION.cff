@@ -8,3 +8,4 @@ authors:
 version: 0.1.0
 repository-code: https://github.com/sreerevanth/quantum-advantage-simulator
 abstract: Evidence-gated small-system quantum research benchmarks. No established quantum advantage.
+license: Apache-2.0

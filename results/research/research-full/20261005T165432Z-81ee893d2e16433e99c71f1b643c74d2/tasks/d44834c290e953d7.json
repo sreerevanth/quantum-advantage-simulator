@@ -1,0 +1,90 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 20,
+    "shots": 1000,
+    "parameters": [
+      0.8001812053833871,
+      1.4386327025705632,
+      0.5796108335348352,
+      0.31394248926007934
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.54,
+      "variance": 0.00031471471471471467
+    },
+    "expected_cut": 3.527312651598146,
+    "exact_cut": 4,
+    "approximation_ratio": 0.8818281628995365,
+    "history": [
+      2.043893544708502,
+      2.6113539404730517,
+      2.671226096179883,
+      2.9244605850224357,
+      2.960591566982668,
+      3.027570575041527,
+      3.1480357614461703,
+      3.357165624832299,
+      3.4805767069870983,
+      3.5135810580161895,
+      3.5262566928763763,
+      3.526820719557257,
+      3.5270311931548752,
+      3.5270493659033306,
+      3.5271887170351532,
+      3.5272966395686947,
+      3.527311324934696,
+      3.5273126356620894,
+      3.527312651503488,
+      3.527312651598146
+    ],
+    "function_evaluations": 145,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 23,
+    "circuit_depth_upper_bound": 11,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "d44834c290e953d7",
+    "wall_seconds": 0.625755500048399,
+    "peak_memory_bytes": 422281216,
+    "rss_start_bytes": 422260736,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "b64b43a9ac4cea75751edab4da7df13cd732522fa37c327f0a429b9c3185791e",
+  "checkpoints": {}
+}

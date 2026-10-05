@@ -1,0 +1,94 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 20,
+    "shots": 1000,
+    "parameters": [
+      1.9301510878492616,
+      0.49806785387273406,
+      0.24903397771569927,
+      0.9650751042921287
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.0,
+      "variance": 0.0
+    },
+    "expected_cut": 3.999999999999462,
+    "exact_cut": 4,
+    "approximation_ratio": 0.9999999999998656,
+    "history": [
+      2.906760732699148,
+      3.4236904165164974,
+      3.505255620305983,
+      3.642691288781017,
+      3.8582023779029466,
+      3.938779572775958,
+      3.9436371372812165,
+      3.9475693174331155,
+      3.9637378536127934,
+      3.9767622919253225,
+      3.9842776007729706,
+      3.991863781495824,
+      3.9978074759379214,
+      3.999599210593582,
+      3.999857744961412,
+      3.9999960275062856,
+      3.999999807172913,
+      3.999999995583037,
+      3.9999999999538782,
+      3.999999999999462
+    ],
+    "function_evaluations": 125,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 25,
+    "circuit_depth_upper_bound": 13,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "job_id": "4d21b912b28d9b43",
+    "wall_seconds": 0.5480507000465877,
+    "peak_memory_bytes": 423075840,
+    "rss_start_bytes": 422854656,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "f8eb80acd3246a0e6405b3a14f0d53d6bd87a3514a59556dc4af746b3548ca69",
+  "checkpoints": {}
+}

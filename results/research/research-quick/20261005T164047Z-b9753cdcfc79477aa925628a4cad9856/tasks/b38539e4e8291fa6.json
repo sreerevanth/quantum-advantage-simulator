@@ -1,0 +1,67 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 4,
+    "shots": 1000,
+    "parameters": [
+      0.6154786759812776,
+      0.30773989259254825
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 2.0,
+      "variance": 0.0
+    },
+    "expected_cut": 1.9999999999984692,
+    "exact_cut": 2,
+    "approximation_ratio": 0.9999999999992346,
+    "history": [
+      1.9992244351005852,
+      1.999943402520596,
+      1.9999999192865912,
+      1.9999999999984692
+    ],
+    "function_evaluations": 21,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 9,
+    "circuit_depth_upper_bound": 5,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "job_id": "b38539e4e8291fa6",
+    "wall_seconds": 0.22880300000542775,
+    "python_peak_bytes": 66722,
+    "memory_scope": "tracemalloc Python allocations; explicit dense buffer sizes for scaling"
+  },
+  "sha256": "54f7aedfb77fe5d5e67421eb5709e3046b8f522985523c96086292763de12e2e",
+  "checkpoints": {}
+}

@@ -1,25 +1,24 @@
-# Implementation audit
+# Implementation and execution status
 
-Audit baseline: c03986e, containing only README.md and proprietary LICENSE. No code, dependencies, tests, registry, or artifacts existed. README implementation claims were unsupported. No existing program could be executed.
+The baseline contained only README and LICENSE. Historical evidence and all eight VQE failures are preserved. The current release implements the practical research workflow; scientific conclusions depend on the saved runs, not this capability table.
 
-| Component | Software status | Evidence |
+| Component | Status | Scope |
 |---|---|---|
-| TFIM / isotropic Heisenberg | VALIDATED | analytical solutions and independent QuTiP matrices/spectra |
-| RBM NQS | VALIDATED | real-positive, enumerated full Hilbert space; two-qubit convergence and deterministic seeds |
-| PennyLane VQE | VALIDATED | RY/Rot chain ansatz, SciPy BFGS/L-BFGS-B; two-qubit convergence |
-| Phase-1 runner | VALIDATED / BENCHMARK EXECUTED | all 77 records; joint accuracy hypothesis NOT_SUPPORTED, 8 VQE failures |
-| Configuration / registry | VALIDATED | bounded YAML contracts and registry agreement |
-| Metrics / verdicts | VALIDATED | normalized complex fidelity, sample statistics, locked all-seed thresholds |
-| Provenance / checkpoints | IMPLEMENTED | environment, git, config hash, parameters and histories |
-| Local noise / Richardson extrapolation | VALIDATED | trace/positivity, zero noise, known polynomial cancellation |
-| MaxCut QAOA | VALIDATED | two-site exact cut / optimization sanity |
-| Circuit discovery | VALIDATED | Bell circuit, deterministic equal-evaluation searches; advantage NOT TESTED |
-| Hardware simulator | VALIDATED | seeded Bell shot counts |
-| IBM adapter | VALIDATED with mocks / NOT EXECUTED live | opt-in and mocked service paths; live access requires credentials/hardware |
-| Plotting / tables / read-only API | VALIDATED | persisted-artifact integration |
-| Dashboard | VALIDATED | read-only saved runs, verdicts, tables and PNG figures; HTTP tests and browser verification |
-| Complex/autoregressive NQS / H2 | NOT IMPLEMENTED | future optional research extensions |
-| GPU / IBM hardware experiments | NOT EXECUTED | CPU environment; hardware access not configured |
-| Open-source release | BLOCKED | existing proprietary license retained; owner must choose open-source terms |
+| Exact TFIM/Heisenberg | VALIDATED | dense complex128, analytic/QuTiP checks |
+| Original positive RBM | VALIDATED | original locked benchmark retained |
+| Complex autoregressive NQS | IMPLEMENTED / VALIDATED | causal amplitudes/sampling, exact-energy training, Adam/SGD, checkpoints, device selection |
+| VQE laboratory | IMPLEMENTED / VALIDATED | RY/Rot/ZZ-RX, depths, initializations, optimizers/restarts, gradient diagnostics |
+| Finite-shot estimation | VALIDATED | independent Pauli measurements and estimator variance |
+| Circuit-level noise | VALIDATED | five local channels, readout and gate-dependent strength; Aer cross-check |
+| Folded finite-shot ZNE | VALIDATED | odd scales, linear/Richardson, allocation, equal-budget comparison |
+| QAOA | VALIDATED | graph families, depths, optimizers, exact cut and final shots |
+| Circuit discovery | VALIDATED | matched budgets, mutation/crossover/elitism, multiple targets/objectives, Pareto, resume |
+| H2 | VALIDATED | STO-3G, Jordan–Wigner, two-electron reference and excitation VQE |
+| Scaling | IMPLEMENTED | recorded practical CPU study; no extrapolated advantage |
+| GPU | IMPLEMENTED / NOT EXECUTED | CPU and unavailable-device paths tested; CUDA hardware absent |
+| IBM | IMPLEMENTED / BLOCKED | simulator/mocks; credentials/access absent |
+| Suite/resume/integrity | VALIDATED | per-task persistence, internal NQS/search resume, sealed SHA-256 evidence |
+| API/dashboard | VALIDATED | read-only artifacts, research views, malformed/path/duplicate/checksum cases |
+| License | APPLIED | owner-authorized Apache-2.0 |
 
-IMPLEMENTED means software exists; VALIDATED indicates the specific correctness checks listed. Neither implies a research advantage. Executed measurements and limitations are recorded in RESULTS.md and FINAL_RESEARCH_REPORT.md.
+Executed experiment counts, negative results, validation totals and release outcome are reported in FINAL_RESEARCH_REPORT.md, VALIDATION.md and GitHub release notes. IMPLEMENTED is not equivalent to experimentally demonstrated advantage.

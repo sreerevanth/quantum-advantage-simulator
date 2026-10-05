@@ -104,9 +104,33 @@
   },
   {
     "args": [
+      "suite",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "verify",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
+      "hardware",
+      "--help"
+    ],
+    "returncode": 0,
+    "expected": 0
+  },
+  {
+    "args": [
       "exact",
       "--config",
-      "missing.yaml"
+      "does-not-exist.yaml"
     ],
     "returncode": 2,
     "expected": 2

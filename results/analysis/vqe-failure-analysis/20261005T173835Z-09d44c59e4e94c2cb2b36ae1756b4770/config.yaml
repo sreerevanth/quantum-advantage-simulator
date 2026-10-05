@@ -1,0 +1,9 @@
+experiment_id: vqe-failure-analysis
+kind: post-run-diagnostic
+seeds:
+- 0
+- 1
+- 2
+- 3
+- 4
+source_run: results\runs\tfim-phase1\20261004T184629Z-aec0c4bc

@@ -1,0 +1,93 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 11,
+    "shots": 1000,
+    "parameters": [
+      1.0380554136193725,
+      1.3644101243155424,
+      -0.4496113618128569,
+      0.7296003429925736
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.222,
+      "variance": 0.00046117717717717723
+    },
+    "expected_cut": 4.181737681790242,
+    "exact_cut": 5,
+    "approximation_ratio": 0.8363475363580484,
+    "history": [
+      3.5519811829902324,
+      4.049751085192359,
+      4.130880701027291,
+      4.1715564076377945,
+      4.181438502204832,
+      4.181714688890747,
+      4.181729657819257,
+      4.181735349768257,
+      4.1817376715343855,
+      4.18173768169687,
+      4.181737681790242
+    ],
+    "function_evaluations": 80,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 29,
+    "circuit_depth_upper_bound": 17,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "cf1c0f10f84205be",
+    "wall_seconds": 0.6058915000176057,
+    "peak_memory_bytes": 424038400,
+    "rss_start_bytes": 423993344,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "39e6487df3bafaa3a30cb724ce0691c2034368bbe4d6748f17d4247e7a44dee1",
+  "checkpoints": {}
+}

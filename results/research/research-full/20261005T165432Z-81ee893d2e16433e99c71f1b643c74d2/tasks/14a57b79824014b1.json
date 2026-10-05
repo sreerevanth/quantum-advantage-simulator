@@ -1,0 +1,104 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 36,
+    "shots": 1000,
+    "parameters": [
+      0.8911158132850509,
+      0.39272330004725947
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.157,
+      "variance": 0.000630981981981982
+    },
+    "expected_cut": 3.1221848084288473,
+    "exact_cut": 4,
+    "approximation_ratio": 0.7805462021072118,
+    "history": [
+      2.8614032990676423,
+      2.8614032990676423,
+      2.8614032990676423,
+      3.0385544467179955,
+      3.0522902779501067,
+      3.0522902779501067,
+      3.086576721878809,
+      3.086576721878809,
+      3.089428694026478,
+      3.1061285823069045,
+      3.1121080871668054,
+      3.1122233618885273,
+      3.1147247687698343,
+      3.1184185840098397,
+      3.120482545686393,
+      3.120482545686393,
+      3.120916939144312,
+      3.122096511810024,
+      3.122096511810024,
+      3.122096511810024,
+      3.1221085656791487,
+      3.122132902898361,
+      3.1221488967161326,
+      3.1221488967161326,
+      3.1221558152157565,
+      3.1221592295678966,
+      3.1221657844520148,
+      3.1221710218775582,
+      3.1221781948092566,
+      3.12218181375776,
+      3.1221847502038536,
+      3.1221847502038536,
+      3.1221847502038536,
+      3.1221847502038536,
+      3.1221847502038536,
+      3.1221848084288473
+    ],
+    "function_evaluations": 46,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 14,
+    "circuit_depth_upper_bound": 6,
+    "optimizer_success": true,
+    "optimizer_message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "14a57b79824014b1",
+    "wall_seconds": 0.3167657000012696,
+    "peak_memory_bytes": 422256640,
+    "rss_start_bytes": 422207488,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "16b6c8b02d9dae73c6f2ef9acce123ebf5b485547ea9850cc2002cffd3174af8",
+  "checkpoints": {}
+}

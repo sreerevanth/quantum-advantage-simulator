@@ -1,13 +1,7 @@
-# Saved-evidence dashboard
+# Research evidence explorer
 
-Install the optional API dependencies with `pip install -e ".[api]"` from the checkout, then run:
+Install `[api]` and start from the checkout with `python -m uvicorn qas.api:create_app --factory --host 127.0.0.1 --port 8765`. Open http://127.0.0.1:8765. The results root defaults to `results` relative to the working directory.
 
-```powershell
-python -m uvicorn qas.api:create_app --factory --host 127.0.0.1 --port 8765
-```
+Select a run and research view to inspect NQS/VQE comparisons, seed distributions, finite-shot mitigation, MaxCut, discovery, chemistry and scaling. Graphs are saved PNGs, with publication SVG/PDF exports in each new complete run. Tables show actual measurements; limitations and per-setting statistics remain available. The checksum button verifies sealed evidence; historical/partial runs display UNSEALED. CPU/GPU and hardware comparisons are shown only when such evidence exists; no synthetic measurements are inserted.
 
-Open http://127.0.0.1:8765. The default results root is `results` relative to the working directory. Run selection displays recorded verdicts, metric rows, configuration, seed statistics and persisted PNG figures. TFIM, analytic noise, QAOA and circuit-search artifacts are supported; the human circuit baseline appears separately from equal-budget searches.
-
-The API and dashboard are read-only. They do not train models, submit hardware jobs, or recalculate research verdicts. File serving is restricted to PNG artifacts inside discovered run directories and the configured results root. The default launch binds only to the local computer. An empty catalog is valid when no saved artifacts exist.
-
-Malformed or temporarily incomplete saved metrics/configurations return HTTP 503 with a specific error message. Duplicate run directory names return HTTP 409 rather than silently selecting one run; give each run a unique directory name. Configurations resolving outside the results root are excluded from discovery. Repaired files are read on the next request without restarting the service.
+The API is read-only. Missing or malformed configurations/metrics and non-finite JSON return controlled 503 responses; duplicate IDs return 409. `/run-catalog?limit=100&offset=0` supports bounded pagination (limit 1–1000); `/runs/ID/integrity` verifies manifests. PNG paths are restricted to the results root. Invalid paths and unknown IDs return 404. Repaired files are read on the next request. The local server is bound to loopback; authentication and public hosting are outside this local evidence viewer's scope.

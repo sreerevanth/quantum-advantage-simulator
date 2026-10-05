@@ -1,0 +1,100 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 8,
+    "shots": 1000,
+    "parameters": [
+      -0.4135307989967854,
+      -0.2653089163004992
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 5.97,
+      "variance": 0.00010720720720720724
+    },
+    "expected_cut": 5.9052118205553965,
+    "exact_cut": 6,
+    "approximation_ratio": 0.984201970092566,
+    "history": [
+      3.420322987180354,
+      5.855783479204672,
+      5.8586333869644225,
+      5.882867937821533,
+      5.9047958824573845,
+      5.905207452975754,
+      5.905211820332802,
+      5.9052118205553965
+    ],
+    "function_evaluations": 39,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 20,
+    "circuit_depth_upper_bound": 12,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "15a778a2fdebb619",
+    "wall_seconds": 0.13551160000497475,
+    "peak_memory_bytes": 424185856,
+    "rss_start_bytes": 424161280,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "10c356b3b94a5bc465e989e6ddb35b0850d962fad7be40d75b1a06385491e075",
+  "checkpoints": {}
+}

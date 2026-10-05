@@ -1,0 +1,85 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 15,
+    "shots": 1000,
+    "parameters": [
+      0.8001813934619315,
+      1.4386327401558483,
+      0.5796107628602422,
+      0.31394248766039284
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.554,
+      "variance": 0.00030939339339339337
+    },
+    "expected_cut": 3.527312651598118,
+    "exact_cut": 4,
+    "approximation_ratio": 0.8818281628995295,
+    "history": [
+      3.151234722748204,
+      3.1884262223376396,
+      3.2310214226110383,
+      3.29046811805026,
+      3.402469663927667,
+      3.4768693805844446,
+      3.5146900281332396,
+      3.52458278003928,
+      3.5258063387861625,
+      3.5265390624958597,
+      3.5271751384464833,
+      3.527294653822172,
+      3.527312557186396,
+      3.527312651094499,
+      3.527312651598118
+    ],
+    "function_evaluations": 95,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 23,
+    "circuit_depth_upper_bound": 11,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "77235901d8ea85fd",
+    "wall_seconds": 0.4676037000026554,
+    "peak_memory_bytes": 422293504,
+    "rss_start_bytes": 422268928,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "2d87ad8cdfe84037e08ee8c606980135794f603812a796419b65fe83fa5d6e66",
+  "checkpoints": {}
+}

@@ -1,0 +1,108 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 12,
+    "shots": 1000,
+    "parameters": [
+      0.465169196096507,
+      0.007082554155247542,
+      -0.08771124176359701,
+      0.349625651062111,
+      0.6483636526880745,
+      0.8973869960036847
+    ],
+    "parameter_count": 6,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 6.0,
+      "variance": 0.0
+    },
+    "expected_cut": 5.999999999998879,
+    "exact_cut": 6,
+    "approximation_ratio": 0.9999999999998131,
+    "history": [
+      5.7716197912010365,
+      5.878534191260145,
+      5.938166434712701,
+      5.975272977144263,
+      5.983407480872171,
+      5.995468528215545,
+      5.999003698017967,
+      5.999958627482444,
+      5.999997629620264,
+      5.999999990024301,
+      5.9999999998735465,
+      5.999999999998879
+    ],
+    "function_evaluations": 119,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 50,
+    "circuit_depth_upper_bound": 34,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "bb6501bed8412665",
+    "wall_seconds": 0.9844352999934927,
+    "peak_memory_bytes": 424443904,
+    "rss_start_bytes": 424415232,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "cec2acf9f1db691825350cd224c3d6d5a340945ed260ef772a118c938ea025ca",
+  "checkpoints": {}
+}
