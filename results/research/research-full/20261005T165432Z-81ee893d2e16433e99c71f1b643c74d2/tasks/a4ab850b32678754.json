@@ -1,0 +1,75 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 7,
+    "shots": 1000,
+    "parameters": [
+      0.8909581344134406,
+      0.3926989666548064
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.145,
+      "variance": 0.0005965715715715716
+    },
+    "expected_cut": 3.1221848548452407,
+    "exact_cut": 4,
+    "approximation_ratio": 0.7805462137113102,
+    "history": [
+      2.9742185218955726,
+      3.116943313716705,
+      3.1217607640831995,
+      3.122173725640426,
+      3.1221846003443594,
+      3.1221848546245186,
+      3.1221848548452407
+    ],
+    "function_evaluations": 30,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 14,
+    "circuit_depth_upper_bound": 6,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "a4ab850b32678754",
+    "wall_seconds": 0.08539660001406446,
+    "peak_memory_bytes": 421699584,
+    "rss_start_bytes": 421679104,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "fc540553c4bebf514a2b1ee9a1d5bca49eaa030bb946e1c216b86bd20b3448a4",
+  "checkpoints": {}
+}

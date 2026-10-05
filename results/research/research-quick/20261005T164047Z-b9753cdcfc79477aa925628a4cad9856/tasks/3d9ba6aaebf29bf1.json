@@ -1,0 +1,38 @@
+{
+  "job": {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "exact",
+    "steps": 30,
+    "device": "cpu"
+  },
+  "row": {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "exact",
+    "steps": 30,
+    "device": "cpu",
+    "energy": -4.758770483143635,
+    "exact_energy": -4.758770483143635,
+    "absolute_energy_error": 0.0,
+    "relative_energy_error": 0.0,
+    "fidelity": 1.0,
+    "magnetization_error": 0.0,
+    "transverse_magnetization_error": 0.0,
+    "iterations": 1,
+    "parameter_count": 0,
+    "state_space_size": 16,
+    "reference_seconds": 0.00447579997126013,
+    "method_seconds": 0.009694800013676286,
+    "hamiltonian_bytes": 4096,
+    "state_bytes": 256,
+    "job_id": "3d9ba6aaebf29bf1",
+    "wall_seconds": 0.014286300051026046,
+    "python_peak_bytes": 41631,
+    "memory_scope": "tracemalloc Python allocations; explicit dense buffer sizes for scaling"
+  },
+  "sha256": "04646ca6aea7a8e602dd3e2b9fb645415f0167a1edc4bdbeaed3b42e966373fa",
+  "checkpoints": {}
+}

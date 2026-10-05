@@ -57,3 +57,50 @@ class IBMBackend:
 
     def result(self, job_id: str):
         return self.service.job(job_id).result()
+
+
+def validation(backend, shots=1000, output="results/hardware", job_id=None):
+    """Submit a small Bell experiment or collect a previously submitted job."""
+    from qiskit import QuantumCircuit
+    from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
+    from qiskit_ibm_runtime import SamplerV2
+
+    from qas import artifacts
+    from qas.integrity import atomic_json
+
+    if not 2 <= shots <= 10000:
+        raise ValueError("Hardware validation supports 2–10000 shots")
+    adapter = IBMBackend(backend, enabled=True)
+    circuit = QuantumCircuit(2)
+    circuit.h(0)
+    circuit.cx(0, 1)
+    circuit.measure_all()
+    isa = generate_preset_pass_manager(backend=adapter.backend, optimization_level=1).run(circuit)
+    job = (
+        adapter.service.job(job_id)
+        if job_id
+        else SamplerV2(mode=adapter.backend).run([isa], shots=shots)
+    )
+    directory = artifacts.create(
+        output, dict(experiment_id="ibm-bell", backend=backend, shots=shots, job_id=job.job_id())
+    )
+    status = str(job.status())
+    data = dict(
+        job_id=job.job_id(),
+        backend=backend,
+        status=status,
+        shots=shots,
+        transpiled_depth=isa.depth(),
+        gate_counts=dict(isa.count_ops()),
+        backend_qubits=adapter.backend.num_qubits,
+        exact_probabilities={"00": 0.5, "11": 0.5},
+        simulator=Simulator().submit([Gate("H", 0), Gate("CNOT", 0, 1)], 2, shots),
+    )
+    if status.upper() in ("DONE", "JOBSTATUS.DONE"):
+        data["hardware_counts"] = job.result()[0].data.meas.get_counts()
+    else:
+        data["resume_command"] = (
+            f"qas hardware --backend {backend} --shots {shots} --job-id {job.job_id()}"
+        )
+    atomic_json(directory / "metrics.json", data)
+    return directory

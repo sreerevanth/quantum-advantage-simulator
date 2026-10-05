@@ -1,0 +1,107 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 39,
+    "shots": 1000,
+    "parameters": [
+      0.8905548633036799,
+      0.39271854490982416
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.145,
+      "variance": 0.0005965715715715716
+    },
+    "expected_cut": 3.1221845809126005,
+    "exact_cut": 4,
+    "approximation_ratio": 0.7805461452281501,
+    "history": [
+      2.847145737853835,
+      2.847145737853835,
+      2.847145737853835,
+      2.9585302566768203,
+      3.0005154812432173,
+      3.0005154812432173,
+      3.0485119313310705,
+      3.079705766918318,
+      3.1009333158482826,
+      3.1076301731064415,
+      3.120446293496583,
+      3.120446293496583,
+      3.120446293496583,
+      3.120446293496583,
+      3.120949805006387,
+      3.120949805006387,
+      3.1213932780431914,
+      3.1213932780431914,
+      3.1215492579248463,
+      3.1216508606137197,
+      3.1216806101480365,
+      3.1217432823921425,
+      3.1218503559258233,
+      3.122011039704097,
+      3.1220507827684836,
+      3.122158912735096,
+      3.1221685127924053,
+      3.122182272267819,
+      3.122183046576395,
+      3.122183046576395,
+      3.122183046576395,
+      3.122183046576395,
+      3.1221834011968568,
+      3.1221835674244613,
+      3.1221838310679093,
+      3.1221841406686286,
+      3.122184262353073,
+      3.1221844476004614,
+      3.1221845809126005
+    ],
+    "function_evaluations": 50,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 14,
+    "circuit_depth_upper_bound": 6,
+    "optimizer_success": true,
+    "optimizer_message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "4b8509ae54bfbc49",
+    "wall_seconds": 0.31606470001861453,
+    "peak_memory_bytes": 422223872,
+    "rss_start_bytes": 422133760,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "3a3491cbd4b0a3b60c56b03fd61f50d3824c9c69d61b4b881f4590ab7839bebf",
+  "checkpoints": {}
+}

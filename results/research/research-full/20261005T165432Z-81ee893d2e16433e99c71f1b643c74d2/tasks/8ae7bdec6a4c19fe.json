@@ -1,0 +1,89 @@
+{
+  "job": {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  "row": {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal",
+    "ideal": -1.8761962820518496,
+    "raw": -1.8719999999999999,
+    "mitigated": -1.815250000000001,
+    "raw_error": 0.004196282051849742,
+    "mitigated_error": 0.06094628205184871,
+    "improvement": -0.05674999999999897,
+    "helped": false,
+    "equal_budget_raw": -1.8426666666666667,
+    "equal_budget_raw_error": 0.033529615385182954,
+    "raw_variance": 0.0017906466466466467,
+    "mitigated_variance": 0.00925348579829834,
+    "scales": [
+      1,
+      3,
+      5
+    ],
+    "weights": [
+      1.8750000000000036,
+      -1.2500000000000038,
+      0.37500000000000083
+    ],
+    "allocations": [
+      1000,
+      1000,
+      1000
+    ],
+    "scaled_measurements": [
+      {
+        "estimate": -1.8719999999999999,
+        "variance": 0.0017906466466466467,
+        "analytic": -1.8761962820518496,
+        "theoretical_variance": 0.0017864326449946388,
+        "total_shots": 3000
+      },
+      {
+        "estimate": -1.918,
+        "variance": 0.0017323523523523525,
+        "analytic": -1.8761962820518494,
+        "theoretical_variance": 0.0017864326449946388,
+        "total_shots": 3000
+      },
+      {
+        "estimate": -1.8739999999999999,
+        "variance": 0.0017880400400400401,
+        "analytic": -1.8761962820518494,
+        "theoretical_variance": 0.0017864326449946388,
+        "total_shots": 3000
+      }
+    ],
+    "total_shots": 9000,
+    "comparison_shots": 9000,
+    "gate_execution_multiplier": 9,
+    "runtime_seconds": 0.018944800016470253,
+    "backend": "pennylane.default.mixed + independent Pauli binomial measurement",
+    "noise_model": "circuit-level local Markov channels; ideal basis measurement + readout flips",
+    "noise": {
+      "depolarizing": 0.0,
+      "amplitude_damping": 0.0,
+      "phase_damping": 0.0,
+      "readout": 0.0,
+      "two_qubit_multiplier": 2
+    },
+    "job_id": "8ae7bdec6a4c19fe",
+    "wall_seconds": 0.019974399998318404,
+    "peak_memory_bytes": 421322752,
+    "rss_start_bytes": 421302272,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "16ed98a03bcab7381841b0ab58eedca96b7154e81d08d86bb6be1ba94bfb85ac",
+  "checkpoints": {}
+}

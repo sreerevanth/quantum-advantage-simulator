@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "qubits": 6,
+      "seed": 2,
+      "ground_fidelity": 6.885265121964095e-12,
+      "first_excited_fidelity": 0.997432513098559,
+      "energy_variance": 0.07875160703368067,
+      "excitation_gap": 0.48214672102128375
+    },
+    {
+      "qubits": 7,
+      "seed": 0,
+      "ground_fidelity": 1.6388900317464912e-17,
+      "first_excited_fidelity": 0.9930812069025642,
+      "energy_variance": 0.13896688654332934,
+      "excitation_gap": 0.41811385307060434
+    },
+    {
+      "qubits": 7,
+      "seed": 1,
+      "ground_fidelity": 3.243703277268352e-17,
+      "first_excited_fidelity": 0.9930812066622023,
+      "energy_variance": 0.1389668831053399,
+      "excitation_gap": 0.41811385307060434
+    },
+    {
+      "qubits": 7,
+      "seed": 3,
+      "ground_fidelity": 2.1993928946186227e-18,
+      "first_excited_fidelity": 0.9930812070127946,
+      "energy_variance": 0.13896688568344473,
+      "excitation_gap": 0.41811385307060434
+    },
+    {
+      "qubits": 7,
+      "seed": 4,
+      "ground_fidelity": 3.6317187733931727e-17,
+      "first_excited_fidelity": 0.9930812070204303,
+      "energy_variance": 0.1389668866393805,
+      "excitation_gap": 0.41811385307060434
+    },
+    {
+      "qubits": 8,
+      "seed": 1,
+      "ground_fidelity": 3.4584775751843055e-17,
+      "first_excited_fidelity": 0.989854984705062,
+      "energy_variance": 0.18521494677261785,
+      "excitation_gap": 0.36907343785321345
+    },
+    {
+      "qubits": 8,
+      "seed": 2,
+      "ground_fidelity": 1.075968611751859e-10,
+      "first_excited_fidelity": 0.9897523722386297,
+      "energy_variance": 0.16006099586307698,
+      "excitation_gap": 0.36907343785321345
+    },
+    {
+      "qubits": 8,
+      "seed": 4,
+      "ground_fidelity": 3.638957679921194e-21,
+      "first_excited_fidelity": 0.9898549850372123,
+      "energy_variance": 0.1852149480180003,
+      "excitation_gap": 0.36907343785321345
+    }
+  ],
+  "verdict": "BENCHMARKED",
+  "complete": true,
+  "metadata_correction": "Full-study TFIM ansatz circuit_depth_upper_bound omitted initial H layer; corrected formula depth*n+1. No raw artifacts altered."
+}

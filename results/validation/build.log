@@ -1,6 +1,6 @@
 * Creating isolated environment: venv+pip...
 * Installing packages in isolated environment:
-  - setuptools>=75
+  - setuptools>=77
 * Getting build dependencies for sdist...
 running egg_info
 writing src\quantum_advantage_simulator.egg-info\PKG-INFO
@@ -11,6 +11,7 @@ writing top-level names to src\quantum_advantage_simulator.egg-info\top_level.tx
 reading manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 adding license file 'LICENSE'
+adding license file 'NOTICE'
 writing manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 * Installed build dependency versions:
   - setuptools==84.0.0
@@ -25,6 +26,7 @@ writing top-level names to src\quantum_advantage_simulator.egg-info\top_level.tx
 reading manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 adding license file 'LICENSE'
+adding license file 'NOTICE'
 writing manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 running check
 creating quantum_advantage_simulator-0.1.0
@@ -41,6 +43,7 @@ copying CITATION.cff -> quantum_advantage_simulator-0.1.0
 copying CONTRIBUTING.md -> quantum_advantage_simulator-0.1.0
 copying LICENSE -> quantum_advantage_simulator-0.1.0
 copying MANIFEST.in -> quantum_advantage_simulator-0.1.0
+copying NOTICE -> quantum_advantage_simulator-0.1.0
 copying README.md -> quantum_advantage_simulator-0.1.0
 copying pyproject.toml -> quantum_advantage_simulator-0.1.0
 copying requirements-lock.txt -> quantum_advantage_simulator-0.1.0
@@ -50,15 +53,20 @@ copying docs\DASHBOARD.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\EXPERIMENTS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\FINAL_RESEARCH_REPORT.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\HARDWARE.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\HISTORICAL_FINAL_RESEARCH_REPORT.md -> quantum_advantage_simulator-0.1.0\docs
+copying docs\HISTORICAL_RESULTS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\IMPLEMENTATION_STATUS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\METHODOLOGY.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\REPRODUCIBILITY.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\RESULTS.md -> quantum_advantage_simulator-0.1.0\docs
 copying docs\VALIDATION.md -> quantum_advantage_simulator-0.1.0\docs
 copying experiments\registry.yaml -> quantum_advantage_simulator-0.1.0\experiments
+copying experiments\research_registry.yaml -> quantum_advantage_simulator-0.1.0\experiments
 copying experiments\configs\discovery.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\noise_sweep.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\qaoa.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
+copying experiments\configs\research_full.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
+copying experiments\configs\research_quick.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\tfim_exact.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\tfim_nqs.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
 copying experiments\configs\tfim_phase1.yaml -> quantum_advantage_simulator-0.1.0\experiments\configs
@@ -69,18 +77,27 @@ copying experiments\configs\zne.yaml -> quantum_advantage_simulator-0.1.0\experi
 copying src\qas\__init__.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\api.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\artifacts.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\autoregressive.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\chemistry.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\cli.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\config.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\dashboard.html -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\discovery.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\exact.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\hardware.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\integrity.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\labs.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\metrics.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\noise.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\nqs.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\plotting.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\registry.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\research.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\research_plots.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\resources.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\search_lab.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\shot_noise.py -> quantum_advantage_simulator-0.1.0\src\qas
+copying src\qas\statistical.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\variational.py -> quantum_advantage_simulator-0.1.0\src\qas
 copying src\qas\benchmarks\__init__.py -> quantum_advantage_simulator-0.1.0\src\qas\benchmarks
 copying src\qas\benchmarks\tfim_compare.py -> quantum_advantage_simulator-0.1.0\src\qas\benchmarks
@@ -94,6 +111,7 @@ copying tests\test_circuits.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_dashboard.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_labs.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_platform.py -> quantum_advantage_simulator-0.1.0\tests
+copying tests\test_research.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_robustness.py -> quantum_advantage_simulator-0.1.0\tests
 copying tests\test_scientific.py -> quantum_advantage_simulator-0.1.0\tests
 Writing quantum_advantage_simulator-0.1.0\setup.cfg
@@ -102,7 +120,7 @@ removing 'quantum_advantage_simulator-0.1.0' (and everything under it)
 * Building wheel from sdist
 * Creating isolated environment: venv+pip...
 * Installing packages in isolated environment:
-  - setuptools>=75
+  - setuptools>=77
 * Getting build dependencies for wheel...
 running egg_info
 writing src\quantum_advantage_simulator.egg-info\PKG-INFO
@@ -113,6 +131,7 @@ writing top-level names to src\quantum_advantage_simulator.egg-info\top_level.tx
 reading manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 adding license file 'LICENSE'
+adding license file 'NOTICE'
 writing manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 * Installed build dependency versions:
   - setuptools==84.0.0
@@ -123,17 +142,26 @@ running build_py
 creating build\lib\qas
 copying src\qas\api.py -> build\lib\qas
 copying src\qas\artifacts.py -> build\lib\qas
+copying src\qas\autoregressive.py -> build\lib\qas
+copying src\qas\chemistry.py -> build\lib\qas
 copying src\qas\cli.py -> build\lib\qas
 copying src\qas\config.py -> build\lib\qas
 copying src\qas\discovery.py -> build\lib\qas
 copying src\qas\exact.py -> build\lib\qas
 copying src\qas\hardware.py -> build\lib\qas
+copying src\qas\integrity.py -> build\lib\qas
 copying src\qas\labs.py -> build\lib\qas
 copying src\qas\metrics.py -> build\lib\qas
 copying src\qas\noise.py -> build\lib\qas
 copying src\qas\nqs.py -> build\lib\qas
 copying src\qas\plotting.py -> build\lib\qas
 copying src\qas\registry.py -> build\lib\qas
+copying src\qas\research.py -> build\lib\qas
+copying src\qas\research_plots.py -> build\lib\qas
+copying src\qas\resources.py -> build\lib\qas
+copying src\qas\search_lab.py -> build\lib\qas
+copying src\qas\shot_noise.py -> build\lib\qas
+copying src\qas\statistical.py -> build\lib\qas
 copying src\qas\variational.py -> build\lib\qas
 copying src\qas\__init__.py -> build\lib\qas
 creating build\lib\qas\benchmarks
@@ -148,6 +176,7 @@ writing top-level names to src\quantum_advantage_simulator.egg-info\top_level.tx
 reading manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 reading manifest template 'MANIFEST.in'
 adding license file 'LICENSE'
+adding license file 'NOTICE'
 writing manifest file 'src\quantum_advantage_simulator.egg-info\SOURCES.txt'
 copying src\qas\dashboard.html -> build\lib\qas
 installing to build\bdist.win-amd64\wheel
@@ -157,47 +186,66 @@ creating build\bdist.win-amd64\wheel
 creating build\bdist.win-amd64\wheel\qas
 copying build\lib\qas\api.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\artifacts.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\autoregressive.py -> build\bdist.win-amd64\wheel\.\qas
 creating build\bdist.win-amd64\wheel\qas\benchmarks
 copying build\lib\qas\benchmarks\tfim_compare.py -> build\bdist.win-amd64\wheel\.\qas\benchmarks
 copying build\lib\qas\benchmarks\__init__.py -> build\bdist.win-amd64\wheel\.\qas\benchmarks
+copying build\lib\qas\chemistry.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\cli.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\config.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\dashboard.html -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\discovery.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\exact.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\hardware.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\integrity.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\labs.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\metrics.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\noise.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\nqs.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\plotting.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\registry.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\research.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\research_plots.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\resources.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\search_lab.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\shot_noise.py -> build\bdist.win-amd64\wheel\.\qas
+copying build\lib\qas\statistical.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\variational.py -> build\bdist.win-amd64\wheel\.\qas
 copying build\lib\qas\__init__.py -> build\bdist.win-amd64\wheel\.\qas
 running install_egg_info
 Copying src\quantum_advantage_simulator.egg-info to build\bdist.win-amd64\wheel\.\quantum_advantage_simulator-0.1.0-py3.12.egg-info
 running install_scripts
 creating build\bdist.win-amd64\wheel\quantum_advantage_simulator-0.1.0.dist-info\WHEEL
-creating 'D:\\quantum\\dist\\.tmp-w_ez6qjb\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
+creating 'D:\\quantum\\dist\\.tmp-0s0jvi2u\\quantum_advantage_simulator-0.1.0-py3-none-any.whl' and adding 'build\\bdist.win-amd64\\wheel' to it
 adding 'qas/__init__.py'
 adding 'qas/api.py'
 adding 'qas/artifacts.py'
+adding 'qas/autoregressive.py'
+adding 'qas/chemistry.py'
 adding 'qas/cli.py'
 adding 'qas/config.py'
 adding 'qas/dashboard.html'
 adding 'qas/discovery.py'
 adding 'qas/exact.py'
 adding 'qas/hardware.py'
+adding 'qas/integrity.py'
 adding 'qas/labs.py'
 adding 'qas/metrics.py'
 adding 'qas/noise.py'
 adding 'qas/nqs.py'
 adding 'qas/plotting.py'
 adding 'qas/registry.py'
+adding 'qas/research.py'
+adding 'qas/research_plots.py'
+adding 'qas/resources.py'
+adding 'qas/search_lab.py'
+adding 'qas/shot_noise.py'
+adding 'qas/statistical.py'
 adding 'qas/variational.py'
 adding 'qas/benchmarks/__init__.py'
 adding 'qas/benchmarks/tfim_compare.py'
 adding 'quantum_advantage_simulator-0.1.0.dist-info/licenses/LICENSE'
+adding 'quantum_advantage_simulator-0.1.0.dist-info/licenses/NOTICE'
 adding 'quantum_advantage_simulator-0.1.0.dist-info/METADATA'
 adding 'quantum_advantage_simulator-0.1.0.dist-info/WHEEL'
 adding 'quantum_advantage_simulator-0.1.0.dist-info/entry_points.txt'

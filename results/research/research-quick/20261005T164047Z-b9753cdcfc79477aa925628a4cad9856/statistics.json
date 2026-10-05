@@ -1,0 +1,1019 @@
+[
+  {
+    "group": {
+      "kind": "nqs",
+      "model": "tfim",
+      "optimizer": "Adam",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 7.524796737712336e-06,
+        "std": null,
+        "median": 7.524796737712336e-06,
+        "minimum": 7.524796737712336e-06,
+        "maximum": 7.524796737712336e-06,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.9999976260033289,
+        "std": null,
+        "median": 0.9999976260033289,
+        "minimum": 0.9999976260033289,
+        "maximum": 0.9999976260033289,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 8.705896499974187,
+        "std": null,
+        "median": 8.705896499974187,
+        "minimum": 8.705896499974187,
+        "maximum": 8.705896499974187,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 78438835.0,
+        "std": null,
+        "median": 78438835.0,
+        "minimum": 78438835.0,
+        "maximum": 78438835.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "nqs",
+      "model": "heisenberg",
+      "optimizer": "Adam",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0040478246992652345,
+        "std": null,
+        "median": 0.0040478246992652345,
+        "minimum": 0.0040478246992652345,
+        "maximum": 0.0040478246992652345,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.998988043825184,
+        "std": null,
+        "median": 0.998988043825184,
+        "minimum": 0.998988043825184,
+        "maximum": 0.998988043825184,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.31071849999716505,
+        "std": null,
+        "median": 0.31071849999716505,
+        "minimum": 0.31071849999716505,
+        "maximum": 0.31071849999716505,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 635305.0,
+        "std": null,
+        "median": 635305.0,
+        "minimum": 635305.0,
+        "maximum": 635305.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "nqs",
+      "model": "complex",
+      "optimizer": "Adam",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 5.543363194249196e-06,
+        "std": null,
+        "median": 5.543363194249196e-06,
+        "minimum": 5.543363194249196e-06,
+        "maximum": 5.543363194249196e-06,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.9999978608239635,
+        "std": null,
+        "median": 0.9999978608239635,
+        "minimum": 0.9999978608239635,
+        "maximum": 0.9999978608239635,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.3663570999633521,
+        "std": null,
+        "median": 0.3663570999633521,
+        "minimum": 0.3663570999633521,
+        "maximum": 0.3663570999633521,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 370146.0,
+        "std": null,
+        "median": 370146.0,
+        "minimum": 370146.0,
+        "maximum": 370146.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "depth": 3,
+      "kind": "vqe",
+      "optimizer": "BFGS",
+      "qubits": 2,
+      "variant": "locked"
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null,
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 13.092111599980853,
+        "std": null,
+        "median": 13.092111599980853,
+        "minimum": 13.092111599980853,
+        "maximum": 13.092111599980853,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 78509805.0,
+        "std": null,
+        "median": 78509805.0,
+        "minimum": 78509805.0,
+        "maximum": 78509805.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": 1.0,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "depth": 4,
+      "kind": "vqe",
+      "optimizer": "BFGS",
+      "qubits": 2,
+      "variant": "problem"
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null,
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 6.714843499998096,
+        "std": null,
+        "median": 6.714843499998096,
+        "minimum": 6.714843499998096,
+        "maximum": 6.714843499998096,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 591365.0,
+        "std": null,
+        "median": 591365.0,
+        "minimum": 591365.0,
+        "maximum": 591365.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": 1.0,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "extrapolation": "linear",
+      "kind": "mitigation",
+      "probability": 0.02,
+      "qubits": 2,
+      "shots": 100
+    },
+    "statistics": {
+      "raw_error": {
+        "count": 1,
+        "mean": 0.19619628205184947,
+        "std": null,
+        "median": 0.19619628205184947,
+        "minimum": 0.19619628205184947,
+        "maximum": 0.19619628205184947,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "mitigated_error": {
+        "count": 1,
+        "mean": 0.07119628205184858,
+        "std": null,
+        "median": 0.07119628205184858,
+        "minimum": 0.07119628205184858,
+        "maximum": 0.07119628205184858,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "equal_budget_raw_error": {
+        "count": 1,
+        "mean": 0.14952961538518283,
+        "std": null,
+        "median": 0.14952961538518283,
+        "minimum": 0.14952961538518283,
+        "maximum": 0.14952961538518283,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.26361000002361834,
+        "std": null,
+        "median": 0.26361000002361834,
+        "minimum": 0.26361000002361834,
+        "maximum": 0.26361000002361834,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 172308.0,
+        "std": null,
+        "median": 172308.0,
+        "minimum": 172308.0,
+        "maximum": 172308.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": 1.0
+  },
+  {
+    "group": {
+      "extrapolation": "richardson",
+      "kind": "mitigation",
+      "probability": 0.02,
+      "qubits": 2,
+      "shots": 100
+    },
+    "statistics": {
+      "raw_error": {
+        "count": 1,
+        "mean": 0.19619628205184947,
+        "std": null,
+        "median": 0.19619628205184947,
+        "minimum": 0.19619628205184947,
+        "maximum": 0.19619628205184947,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "mitigated_error": {
+        "count": 1,
+        "mean": 0.02369628205184804,
+        "std": null,
+        "median": 0.02369628205184804,
+        "minimum": 0.02369628205184804,
+        "maximum": 0.02369628205184804,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "equal_budget_raw_error": {
+        "count": 1,
+        "mean": 0.14952961538518283,
+        "std": null,
+        "median": 0.14952961538518283,
+        "minimum": 0.14952961538518283,
+        "maximum": 0.14952961538518283,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.2879782000090927,
+        "std": null,
+        "median": 0.2879782000090927,
+        "minimum": 0.2879782000090927,
+        "maximum": 0.2879782000090927,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 101282.0,
+        "std": null,
+        "median": 101282.0,
+        "minimum": 101282.0,
+        "maximum": 101282.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": 1.0
+  },
+  {
+    "group": {
+      "depth": 1,
+      "family": "path",
+      "kind": "qaoa",
+      "optimizer": "BFGS",
+      "qubits": 3,
+      "shots": 1000
+    },
+    "statistics": {
+      "approximation_ratio": {
+        "count": 1,
+        "mean": 0.8247595264191607,
+        "std": null,
+        "median": 0.8247595264191607,
+        "minimum": 0.8247595264191607,
+        "maximum": 0.8247595264191607,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.20870919997105375,
+        "std": null,
+        "median": 0.20870919997105375,
+        "minimum": 0.20870919997105375,
+        "maximum": 0.20870919997105375,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 70675.0,
+        "std": null,
+        "median": 70675.0,
+        "minimum": 70675.0,
+        "maximum": 70675.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "depth": 1,
+      "family": "cycle",
+      "kind": "qaoa",
+      "optimizer": "BFGS",
+      "qubits": 3,
+      "shots": 1000
+    },
+    "statistics": {
+      "approximation_ratio": {
+        "count": 1,
+        "mean": 0.9999999999992346,
+        "std": null,
+        "median": 0.9999999999992346,
+        "minimum": 0.9999999999992346,
+        "maximum": 0.9999999999992346,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.22880300000542775,
+        "std": null,
+        "median": 0.22880300000542775,
+        "minimum": 0.22880300000542775,
+        "maximum": 0.22880300000542775,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 66722.0,
+        "std": null,
+        "median": 66722.0,
+        "minimum": 66722.0,
+        "maximum": 66722.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "depth": 1,
+      "family": "random",
+      "kind": "qaoa",
+      "optimizer": "BFGS",
+      "qubits": 3,
+      "shots": 1000
+    },
+    "statistics": {
+      "approximation_ratio": {
+        "count": 1,
+        "mean": 0.8247595264191607,
+        "std": null,
+        "median": 0.8247595264191607,
+        "minimum": 0.8247595264191607,
+        "maximum": 0.8247595264191607,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.27622979995794594,
+        "std": null,
+        "median": 0.27622979995794594,
+        "minimum": 0.27622979995794594,
+        "maximum": 0.27622979995794594,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 68914.0,
+        "std": null,
+        "median": 68914.0,
+        "minimum": 68914.0,
+        "maximum": 68914.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "depth": 1,
+      "family": "dense",
+      "kind": "qaoa",
+      "optimizer": "BFGS",
+      "qubits": 3,
+      "shots": 1000
+    },
+    "statistics": {
+      "approximation_ratio": {
+        "count": 1,
+        "mean": 0.999999999999182,
+        "std": null,
+        "median": 0.999999999999182,
+        "minimum": 0.999999999999182,
+        "maximum": 0.999999999999182,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.24912679998669773,
+        "std": null,
+        "median": 0.24912679998669773,
+        "minimum": 0.24912679998669773,
+        "maximum": 0.24912679998669773,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 66197.0,
+        "std": null,
+        "median": 66197.0,
+        "minimum": 66197.0,
+        "maximum": 66197.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "discovery",
+      "objective": "fidelity",
+      "qubits": 2,
+      "target": "bell"
+    },
+    "statistics": {
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.5017401000368409,
+        "std": null,
+        "median": 0.5017401000368409,
+        "minimum": 0.5017401000368409,
+        "maximum": 0.5017401000368409,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 162550.0,
+        "std": null,
+        "median": 162550.0,
+        "minimum": 162550.0,
+        "maximum": 162550.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "discovery",
+      "objective": "fidelity",
+      "qubits": 3,
+      "target": "ghz"
+    },
+    "statistics": {
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.4688568999990821,
+        "std": null,
+        "median": 0.4688568999990821,
+        "minimum": 0.4688568999990821,
+        "maximum": 0.4688568999990821,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 126744.0,
+        "std": null,
+        "median": 126744.0,
+        "minimum": 126744.0,
+        "maximum": 126744.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "discovery",
+      "objective": "fidelity",
+      "qubits": 3,
+      "target": "cluster"
+    },
+    "statistics": {
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.6261424000258557,
+        "std": null,
+        "median": 0.6261424000258557,
+        "minimum": 0.6261424000258557,
+        "maximum": 0.6261424000258557,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 131081.0,
+        "std": null,
+        "median": 131081.0,
+        "minimum": 131081.0,
+        "maximum": 131081.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "distance": 1.4,
+      "kind": "chemistry",
+      "qubits": 4
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 2.220446049250313e-16,
+        "std": null,
+        "median": 2.220446049250313e-16,
+        "minimum": 2.220446049250313e-16,
+        "maximum": 2.220446049250313e-16,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 2.009096599998884,
+        "std": null,
+        "median": 2.009096599998884,
+        "minimum": 2.009096599998884,
+        "maximum": 2.009096599998884,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 885097.0,
+        "std": null,
+        "median": 885097.0,
+        "minimum": 885097.0,
+        "maximum": 885097.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "exact",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null,
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.006321900000330061,
+        "std": null,
+        "median": 0.006321900000330061,
+        "minimum": 0.006321900000330061,
+        "maximum": 0.006321900000330061,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 6331.0,
+        "std": null,
+        "median": 6331.0,
+        "minimum": 6331.0,
+        "maximum": 6331.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "autoregressive",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0023326241231060862,
+        "std": null,
+        "median": 0.0023326241231060862,
+        "minimum": 0.0023326241231060862,
+        "maximum": 0.0023326241231060862,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.9990461482823045,
+        "std": null,
+        "median": 0.9990461482823045,
+        "minimum": 0.9990461482823045,
+        "maximum": 0.9990461482823045,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.2205806999700144,
+        "std": null,
+        "median": 0.2205806999700144,
+        "minimum": 0.2205806999700144,
+        "maximum": 0.2205806999700144,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 85420.0,
+        "std": null,
+        "median": 85420.0,
+        "minimum": 85420.0,
+        "maximum": 85420.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "vqe",
+      "qubits": 2
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null,
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 2.4757572999806143,
+        "std": null,
+        "median": 2.4757572999806143,
+        "minimum": 2.4757572999806143,
+        "maximum": 2.4757572999806143,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 384863.0,
+        "std": null,
+        "median": 384863.0,
+        "minimum": 384863.0,
+        "maximum": 384863.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "exact",
+      "qubits": 4
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0,
+        "std": null,
+        "median": 0.0,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 1.0,
+        "std": null,
+        "median": 1.0,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.014286300051026046,
+        "std": null,
+        "median": 0.014286300051026046,
+        "minimum": 0.014286300051026046,
+        "maximum": 0.014286300051026046,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 41631.0,
+        "std": null,
+        "median": 41631.0,
+        "minimum": 41631.0,
+        "maximum": 41631.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "autoregressive",
+      "qubits": 4
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0146333990113785,
+        "std": null,
+        "median": 0.0146333990113785,
+        "minimum": 0.0146333990113785,
+        "maximum": 0.0146333990113785,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.9894898959408752,
+        "std": null,
+        "median": 0.9894898959408752,
+        "minimum": 0.9894898959408752,
+        "maximum": 0.9894898959408752,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 0.2743804999627173,
+        "std": null,
+        "median": 0.2743804999627173,
+        "minimum": 0.2743804999627173,
+        "maximum": 0.2743804999627173,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 176941.0,
+        "std": null,
+        "median": 176941.0,
+        "minimum": 176941.0,
+        "maximum": 176941.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  },
+  {
+    "group": {
+      "kind": "scaling",
+      "method": "vqe",
+      "qubits": 4
+    },
+    "statistics": {
+      "absolute_energy_error": {
+        "count": 1,
+        "mean": 0.0004730845807001671,
+        "std": null,
+        "median": 0.0004730845807001671,
+        "minimum": 0.0004730845807001671,
+        "maximum": 0.0004730845807001671,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "fidelity": {
+        "count": 1,
+        "mean": 0.9999126492721166,
+        "std": null,
+        "median": 0.9999126492721166,
+        "minimum": 0.9999126492721166,
+        "maximum": 0.9999126492721166,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "wall_seconds": {
+        "count": 1,
+        "mean": 9.353362599969842,
+        "std": null,
+        "median": 9.353362599969842,
+        "minimum": 9.353362599969842,
+        "maximum": 9.353362599969842,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      },
+      "python_peak_bytes": {
+        "count": 1,
+        "mean": 680554.0,
+        "std": null,
+        "median": 680554.0,
+        "minimum": 680554.0,
+        "maximum": 680554.0,
+        "mean_ci95": null,
+        "interval_assumption": "Student-t interval for independent seed means; approximate at small n, not uncertainty of exact reference"
+      }
+    },
+    "success_rate": null,
+    "mitigation_help_rate": null
+  }
+]

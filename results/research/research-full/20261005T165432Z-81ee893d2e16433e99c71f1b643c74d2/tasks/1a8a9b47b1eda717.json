@@ -1,0 +1,100 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 18,
+    "shots": 1000,
+    "parameters": [
+      -0.4775533098182782,
+      1.6139165820120003,
+      1.310149727189553,
+      0.19362959997948506
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 4.722,
+      "variance": 0.0004051211211211211
+    },
+    "expected_cut": 4.742640634706053,
+    "exact_cut": 5,
+    "approximation_ratio": 0.9485281269412106,
+    "history": [
+      4.129116289239792,
+      4.320830339789628,
+      4.424523819309096,
+      4.433900065782018,
+      4.447167293297437,
+      4.459143488210659,
+      4.469544310366508,
+      4.48522924859119,
+      4.505675023526188,
+      4.5432702112509755,
+      4.613479092927043,
+      4.716003491136183,
+      4.7426246299193515,
+      4.742637564839022,
+      4.742640632009008,
+      4.742640633719626,
+      4.742640634549781,
+      4.742640634706053
+    ],
+    "function_evaluations": 115,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 29,
+    "circuit_depth_upper_bound": 17,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "1a8a9b47b1eda717",
+    "wall_seconds": 0.6438774999696761,
+    "peak_memory_bytes": 424095744,
+    "rss_start_bytes": 424075264,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "549e730c2421955be57093b2ea7a408defe67c2cb499e770c91c552f59271245",
+  "checkpoints": {}
+}

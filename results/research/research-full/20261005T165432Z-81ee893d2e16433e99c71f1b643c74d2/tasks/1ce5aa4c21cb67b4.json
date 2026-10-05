@@ -1,0 +1,88 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 18,
+    "shots": 1000,
+    "parameters": [
+      0.800181009646347,
+      1.4386323907802472,
+      0.5796106996725063,
+      0.3139423716058865
+    ],
+    "parameter_count": 4,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 3.532,
+      "variance": 0.00031929529529529525
+    },
+    "expected_cut": 3.5273126515982725,
+    "exact_cut": 4,
+    "approximation_ratio": 0.8818281628995681,
+    "history": [
+      3.1330478906572337,
+      3.1654923178233316,
+      3.189060659548237,
+      3.236167581680058,
+      3.269903784171969,
+      3.2858611049889315,
+      3.3145421610395998,
+      3.3641149910733343,
+      3.4216370186049305,
+      3.466998978015104,
+      3.482404677103034,
+      3.5042640349846526,
+      3.5192540692555205,
+      3.526309282822263,
+      3.527299419913091,
+      3.527312642529207,
+      3.5273126515762243,
+      3.5273126515982725
+    ],
+    "function_evaluations": 110,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 23,
+    "circuit_depth_upper_bound": 11,
+    "optimizer_success": true,
+    "optimizer_message": "Optimization terminated successfully.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "1ce5aa4c21cb67b4",
+    "wall_seconds": 0.46429540001554415,
+    "peak_memory_bytes": 422281216,
+    "rss_start_bytes": 422256640,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "3018b2240da4b9c7fb1666405af81aaf23965ff8ab4ee02291f142e22faaceef",
+  "checkpoints": {}
+}

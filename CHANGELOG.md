@@ -1,13 +1,15 @@
 # Changelog
 
-## 0.1.0 — research implementation candidate
+## 0.1.0
 
-- Add exact TFIM/Heisenberg references, independent scientific validation and centralized metrics.
-- Add enumerated positive RBM, PennyLane VQE, multi-seed benchmark registry and artifact/verdict contract.
-- Add analytic local noise/Richardson extrapolation, MaxCut QAOA, restricted circuit search and simulator hardware adapter.
-- Add persisted-result plotting/tables, CLI, optional read-only API, packaging and CI.
-- Reject duplicate run IDs and return controlled errors for malformed saved evidence.
-- Add a packaged read-only dashboard for persisted run selection, metrics and figures.
-- Replace unsupported README implementation claims with executed evidence and limitations.
+- Validated exact TFIM/Heisenberg references, positive RBM and original multi-seed VQE benchmark with preserved negative verdicts.
+- Complex autoregressive NQS with phase representation, direct sampling, Adam/SGD, gradients, early stopping, CPU/CUDA selection and optimizer resume.
+- VQE ansatz/initialization/depth/optimizer/restart laboratory and controlled failure study.
+- Finite-shot Pauli estimation, five gate-local noise channels, readout error and folded linear/Richardson ZNE with equal-shot comparison.
+- Expanded MaxCut, evolutionary/random circuit discovery with crossover/Pareto/resume, H2/STO-3G and CPU scaling.
+- One-command resumable research suite, atomic task artifacts, full UUIDs, SHA-256 manifests, descriptive statistics and paper exports.
+- Read-only research dashboard/API with integrity, malformed-evidence and path checks.
+- Cross-library scientific tests, multi-version PR CI, manual research CI, wheel/sdist installation checks.
+- Apache-2.0 applied with explicit owner authorization.
 
-Publication/release is subject to validation and license resolution; no quantum advantage claim.
+No quantum advantage established. Original locked VQE failures and unsuccessful mitigation/search outcomes are retained. GPU and live IBM experiments were not executed because hardware/access were unavailable. See the final research report for measured limits and reproduction instructions.

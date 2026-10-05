@@ -1,0 +1,33 @@
+{
+  "gradient_norms": [
+    0.8292268023811001,
+    0.5521547092599475,
+    0.49003056433001113,
+    0.18301556530869179,
+    0.03877905429869452,
+    0.013779084504865135,
+    0.0008178185940268606,
+    4.043273897282054e-05,
+    3.27866777058437e-08
+  ],
+  "final_gradient_norm": 3.27866777058437e-08,
+  "parameter_count": 12,
+  "initialization": "normal",
+  "function_evaluations": 59,
+  "history": [
+    -2.01276034565472,
+    -2.067991208853941,
+    -2.1734478362897,
+    -2.233855196487368,
+    -2.2358076808871727,
+    -2.236047204361296,
+    -2.236067931574425,
+    -2.2360679773674184,
+    -2.23606797749979
+  ],
+  "iterations": 8,
+  "optimizer_success": false,
+  "optimizer_message": "Desired error not necessarily achieved due to precision loss.",
+  "gate_count": 14,
+  "circuit_depth_upper_bound": 8
+}

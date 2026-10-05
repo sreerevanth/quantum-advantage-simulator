@@ -1,0 +1,14 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  "error_type": "ValueError",
+  "message": "Edges must be nonempty and unique"
+}

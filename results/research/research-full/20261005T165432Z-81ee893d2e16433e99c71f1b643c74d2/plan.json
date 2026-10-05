@@ -1,0 +1,5514 @@
+[
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "tfim",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "tfim",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "tfim",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "tfim",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "tfim",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "heisenberg",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "heisenberg",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "heisenberg",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "heisenberg",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "heisenberg",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "complex",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "complex",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "complex",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "complex",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 4,
+    "model": "complex",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "tfim",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "tfim",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "tfim",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "tfim",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "tfim",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "heisenberg",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "heisenberg",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "heisenberg",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "heisenberg",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "heisenberg",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "complex",
+    "seed": 0,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "complex",
+    "seed": 1,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "complex",
+    "seed": 2,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "complex",
+    "seed": 3,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 6,
+    "model": "complex",
+    "seed": 4,
+    "steps": 350,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 0,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 1,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 2,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 3,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 6,
+    "seed": 4,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 0,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 1,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 2,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 3,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 7,
+    "seed": 4,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "depth",
+    "ansatz": "ry",
+    "depth": 6,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "initialization",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "uniform",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "budget",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 300,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "restart",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 150,
+    "restarts": 2
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 0,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 1,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 2,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 3,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 8,
+    "seed": 4,
+    "variant": "optimizer",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "L-BFGS-B",
+    "iterations": 150,
+    "restarts": 1
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.0,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 1000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 1,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 2,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 3,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 4,
+    "probability": 0.1,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "path",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "cycle",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "random",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 2,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "BFGS",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 0,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 2,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 3,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 4,
+    "family": "dense",
+    "depth": 3,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 0,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 1,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 2,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 3,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 4,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 0,
+    "target": "bell",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 1,
+    "target": "bell",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 2,
+    "target": "bell",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 3,
+    "target": "bell",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 4,
+    "target": "bell",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 1,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 2,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 3,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 4,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "ghz",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 1,
+    "target": "ghz",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 2,
+    "target": "ghz",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 3,
+    "target": "ghz",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 4,
+    "target": "ghz",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 1,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 2,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 3,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 4,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "cluster",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 1,
+    "target": "cluster",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 2,
+    "target": "cluster",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 3,
+    "target": "cluster",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 4,
+    "target": "cluster",
+    "objective": "energy",
+    "budget": 300
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 0,
+    "distance": 1.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 1,
+    "distance": 1.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 2,
+    "distance": 1.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 3,
+    "distance": 1.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 4,
+    "distance": 1.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 0,
+    "distance": 1.4
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 1,
+    "distance": 1.4
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 2,
+    "distance": 1.4
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 3,
+    "distance": 1.4
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 4,
+    "distance": 1.4
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 0,
+    "distance": 2.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 1,
+    "distance": 2.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 2,
+    "distance": 2.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 3,
+    "distance": 2.0
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 4,
+    "distance": 2.0
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 6,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 6,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 6,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 8,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 8,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 8,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 10,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 10,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  }
+]

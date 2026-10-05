@@ -20,7 +20,7 @@ def execute(circuit: list[Gate], n: int) -> np.ndarray:
     state = np.zeros(2**n, dtype=complex)
     state[0] = 1
     for gate in circuit:
-        if not 0 <= gate.wire < n or gate.name not in ("H", "RY", "CNOT"):
+        if not 0 <= gate.wire < n or gate.name not in ("H", "RY", "RZ", "CNOT"):
             raise ValueError("Invalid gate")
         if gate.name == "CNOT":
             if not 0 <= gate.target < n or gate.target == gate.wire:
@@ -41,6 +41,8 @@ def execute(circuit: list[Gate], n: int) -> np.ndarray:
                     ]
                 )
             )
+            if gate.name == "RZ":
+                local = np.diag([np.exp(-0.5j * gate.angle), np.exp(0.5j * gate.angle)])
             full = np.ones((1, 1), dtype=complex)
             for wire in range(n):
                 full = np.kron(full, local if wire == gate.wire else PAULI["I"])

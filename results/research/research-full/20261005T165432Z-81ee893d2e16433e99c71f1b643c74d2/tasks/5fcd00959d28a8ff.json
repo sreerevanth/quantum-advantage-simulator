@@ -1,0 +1,39 @@
+{
+  "job": {
+    "kind": "scaling",
+    "qubits": 10,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu"
+  },
+  "row": {
+    "kind": "scaling",
+    "qubits": 10,
+    "seed": 0,
+    "method": "exact",
+    "steps": 150,
+    "device": "cpu",
+    "energy": -12.381489999654764,
+    "exact_energy": -12.381489999654764,
+    "absolute_energy_error": 0.0,
+    "relative_energy_error": 0.0,
+    "fidelity": 1.0,
+    "magnetization_error": 0.0,
+    "transverse_magnetization_error": 0.0,
+    "iterations": 1,
+    "parameter_count": 0,
+    "state_space_size": 1024,
+    "reference_seconds": 1.8366199000156485,
+    "method_seconds": 1.4731627000146545,
+    "hamiltonian_bytes": 16777216,
+    "state_bytes": 16384,
+    "job_id": "5fcd00959d28a8ff",
+    "wall_seconds": 3.312287100008689,
+    "peak_memory_bytes": 520294400,
+    "rss_start_bytes": 428318720,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "185fbcc4a41dca224861316f309adc006605ae993a796509acfb3c77496dfada",
+  "checkpoints": {}
+}

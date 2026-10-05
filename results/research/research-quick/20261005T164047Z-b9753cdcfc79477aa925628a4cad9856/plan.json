@@ -1,0 +1,192 @@
+[
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "tfim",
+    "seed": 0,
+    "steps": 80,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "heisenberg",
+    "seed": 0,
+    "steps": 80,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "nqs",
+    "qubits": 2,
+    "model": "complex",
+    "seed": 0,
+    "steps": 80,
+    "hidden": 16,
+    "optimizer": "Adam",
+    "device": "cpu"
+  },
+  {
+    "kind": "vqe",
+    "qubits": 2,
+    "seed": 0,
+    "variant": "locked",
+    "ansatz": "ry",
+    "depth": 3,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 40,
+    "restarts": 1
+  },
+  {
+    "kind": "vqe",
+    "qubits": 2,
+    "seed": 0,
+    "variant": "problem",
+    "ansatz": "tfim",
+    "depth": 4,
+    "initialization": "normal",
+    "optimizer": "BFGS",
+    "iterations": 40,
+    "restarts": 1
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 100,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "path",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "cycle",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "random",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  {
+    "kind": "qaoa",
+    "qubits": 3,
+    "seed": 0,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "BFGS",
+    "iterations": 30,
+    "shots": 1000
+  },
+  {
+    "kind": "discovery",
+    "qubits": 2,
+    "seed": 0,
+    "target": "bell",
+    "objective": "fidelity",
+    "budget": 40
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "ghz",
+    "objective": "fidelity",
+    "budget": 40
+  },
+  {
+    "kind": "discovery",
+    "qubits": 3,
+    "seed": 0,
+    "target": "cluster",
+    "objective": "fidelity",
+    "budget": 40
+  },
+  {
+    "kind": "chemistry",
+    "qubits": 4,
+    "seed": 0,
+    "distance": 1.4
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "exact",
+    "steps": 30,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 30,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 2,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 30,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "exact",
+    "steps": 30,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 30,
+    "device": "cpu"
+  },
+  {
+    "kind": "scaling",
+    "qubits": 4,
+    "seed": 0,
+    "method": "vqe",
+    "steps": 30,
+    "device": "cpu"
+  }
+]

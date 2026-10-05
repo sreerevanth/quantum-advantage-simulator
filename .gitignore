@@ -15,3 +15,7 @@ build/
 *.pstats
 .idea/
 .vscode/
+
+!results/research/**/*.pt
+
+.release-check/

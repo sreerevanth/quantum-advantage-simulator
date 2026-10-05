@@ -1,0 +1,128 @@
+{
+  "job": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 100,
+    "shots": 1000
+  },
+  "row": {
+    "kind": "qaoa",
+    "qubits": 5,
+    "seed": 1,
+    "family": "dense",
+    "depth": 1,
+    "optimizer": "COBYLA",
+    "iterations": 36,
+    "shots": 1000,
+    "parameters": [
+      0.41350843574798973,
+      1.8360964990774764
+    ],
+    "parameter_count": 2,
+    "finite_shot_evaluation": {
+      "shots": 1000,
+      "expected_cut": 5.97,
+      "variance": 0.00010720720720720724
+    },
+    "expected_cut": 5.905211816143478,
+    "exact_cut": 6,
+    "approximation_ratio": 0.9842019693572462,
+    "history": [
+      5.602667948406957,
+      5.602667948406957,
+      5.818904516356845,
+      5.818904516356845,
+      5.872624725753416,
+      5.872624725753416,
+      5.874779221976603,
+      5.88948261474367,
+      5.890539016349708,
+      5.890539016349708,
+      5.895924974228786,
+      5.899312046578119,
+      5.899312046578119,
+      5.9021194490532345,
+      5.9024276569818435,
+      5.904069819216035,
+      5.9048671165347715,
+      5.9048671165347715,
+      5.9048671165347715,
+      5.9048671165347715,
+      5.904918176813759,
+      5.9050131374465655,
+      5.905133780851939,
+      5.905174426858643,
+      5.905196103633834,
+      5.905198147107267,
+      5.905198147107267,
+      5.905210472821218,
+      5.905210472821218,
+      5.905210472821218,
+      5.905210472821218,
+      5.905210822986339,
+      5.905211622916459,
+      5.905211816143478,
+      5.905211816143478,
+      5.905211816143478
+    ],
+    "function_evaluations": 46,
+    "budget_semantics": "COBYLA max function evaluations; BFGS/Nelder-Mead max iterations",
+    "gate_count": 20,
+    "circuit_depth_upper_bound": 12,
+    "optimizer_success": true,
+    "optimizer_message": "Return from COBYLA because the trust region radius reaches its lower bound.",
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "job_id": "0147aa50d7e49ba2",
+    "wall_seconds": 0.3904515000176616,
+    "peak_memory_bytes": 424284160,
+    "rss_start_bytes": 424235008,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "02a24c3304a77cee06496649c6ba966a79e66c7b2d382ff1f38082c928f46009",
+  "checkpoints": {}
+}

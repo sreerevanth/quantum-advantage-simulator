@@ -52,14 +52,18 @@ def create(root: str | Path, config: dict) -> Path:
     run = (
         Path(root)
         / config["experiment_id"]
-        / (datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ") + "-" + uuid4().hex[:8])
+        / (datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ") + "-" + uuid4().hex)
     )
     run.mkdir(parents=True, exist_ok=False)
     (run / "checkpoints").mkdir()
     (run / "figures").mkdir()
     (run / "config.yaml").write_text(yaml.safe_dump(config), encoding="utf-8")
     (run / "environment.json").write_text(
-        json.dumps(environment(config), indent=2), encoding="utf-8"
+        json.dumps(
+            {**environment(config), "experiment_id": config["experiment_id"], "run_id": run.name},
+            indent=2,
+        ),
+        encoding="utf-8",
     )
     return run
 

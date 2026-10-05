@@ -1,0 +1,89 @@
+{
+  "job": {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal"
+  },
+  "row": {
+    "kind": "mitigation",
+    "qubits": 2,
+    "seed": 2,
+    "probability": 0.002,
+    "shots": 10000,
+    "extrapolation": "linear",
+    "allocation": "equal",
+    "ideal": -1.8761962820518496,
+    "raw": -1.8546,
+    "mitigated": -1.8749833333333341,
+    "raw_error": 0.021596282051849602,
+    "mitigated_error": 0.0012129487185155163,
+    "improvement": 0.020383333333334086,
+    "helped": true,
+    "equal_budget_raw": -1.8508,
+    "equal_budget_raw_error": 0.025396282051849628,
+    "raw_variance": 0.0001816537693769377,
+    "mitigated_variance": 0.00026739981295351774,
+    "scales": [
+      1,
+      3,
+      5
+    ],
+    "weights": [
+      1.0833333333333337,
+      0.3333333333333335,
+      -0.41666666666666685
+    ],
+    "allocations": [
+      10000,
+      10000,
+      10000
+    ],
+    "scaled_measurements": [
+      {
+        "estimate": -1.8546,
+        "variance": 0.0001816537693769377,
+        "analytic": -1.8505897288884254,
+        "theoretical_variance": 0.00018189942767934624,
+        "total_shots": 30000
+      },
+      {
+        "estimate": -1.806,
+        "variance": 0.0001869808500850085,
+        "analytic": -1.8077074922568717,
+        "theoretical_variance": 0.00018709789045835235,
+        "total_shots": 30000
+      },
+      {
+        "estimate": -1.7668,
+        "variance": 0.000192575697569757,
+        "analytic": -1.7659430389585005,
+        "theoretical_variance": 0.0001920481893989848,
+        "total_shots": 30000
+      }
+    ],
+    "total_shots": 90000,
+    "comparison_shots": 90000,
+    "gate_execution_multiplier": 9,
+    "runtime_seconds": 0.04744669998763129,
+    "backend": "pennylane.default.mixed + independent Pauli binomial measurement",
+    "noise_model": "circuit-level local Markov channels; ideal basis measurement + readout flips",
+    "noise": {
+      "depolarizing": 0.002,
+      "amplitude_damping": 0.001,
+      "phase_damping": 0.0006666666666666666,
+      "readout": 0.0005,
+      "two_qubit_multiplier": 2
+    },
+    "job_id": "81d1cf65c68dcd3a",
+    "wall_seconds": 0.04831519996514544,
+    "peak_memory_bytes": 421326848,
+    "rss_start_bytes": 421306368,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "073f47b8c62fa0f68c1382986d4df9e7a9422df40a2d8472c7897ae2ee6b58c7",
+  "checkpoints": {}
+}

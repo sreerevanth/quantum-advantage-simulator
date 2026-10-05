@@ -1,0 +1,89 @@
+{
+  "job": {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal"
+  },
+  "row": {
+    "kind": "mitigation",
+    "qubits": 3,
+    "seed": 0,
+    "probability": 0.02,
+    "shots": 10000,
+    "extrapolation": "richardson",
+    "allocation": "equal",
+    "ideal": -3.12570139883725,
+    "raw": -2.6352,
+    "mitigated": -3.0050750000000033,
+    "raw_error": 0.49050139883724997,
+    "mitigated_error": 0.1206263988372469,
+    "improvement": 0.36987500000000306,
+    "helped": true,
+    "equal_budget_raw": -2.6340666666666666,
+    "equal_budget_raw_error": 0.4916347321705836,
+    "raw_variance": 0.0003557585598559856,
+    "mitigated_variance": 0.0019619571931568246,
+    "scales": [
+      1,
+      3,
+      5
+    ],
+    "weights": [
+      1.8750000000000036,
+      -1.2500000000000038,
+      0.37500000000000083
+    ],
+    "allocations": [
+      10000,
+      10000,
+      10000
+    ],
+    "scaled_measurements": [
+      {
+        "estimate": -2.6352,
+        "variance": 0.0003557585598559856,
+        "analytic": -2.6399436383269266,
+        "theoretical_variance": 0.00035525481366480486,
+        "total_shots": 50000
+      },
+      {
+        "estimate": -1.9982,
+        "variance": 0.000414757895789579,
+        "analytic": -1.9836512495184704,
+        "theoretical_variance": 0.0004154680293017247,
+        "total_shots": 50000
+      },
+      {
+        "estimate": -1.4982,
+        "variance": 0.0004493105350535054,
+        "analytic": -1.5163114011232177,
+        "theoretical_variance": 0.0004484113240010815,
+        "total_shots": 50000
+      }
+    ],
+    "total_shots": 150000,
+    "comparison_shots": 150000,
+    "gate_execution_multiplier": 9,
+    "runtime_seconds": 0.11837000004015863,
+    "backend": "pennylane.default.mixed + independent Pauli binomial measurement",
+    "noise_model": "circuit-level local Markov channels; ideal basis measurement + readout flips",
+    "noise": {
+      "depolarizing": 0.02,
+      "amplitude_damping": 0.01,
+      "phase_damping": 0.006666666666666667,
+      "readout": 0.005,
+      "two_qubit_multiplier": 2
+    },
+    "job_id": "8e64f26f2980d710",
+    "wall_seconds": 0.11937979998765513,
+    "peak_memory_bytes": 421523456,
+    "rss_start_bytes": 421507072,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "1b55278981cf5050836d34ee41b22e08a69aa2a53672c933c7d38f97106b0328",
+  "checkpoints": {}
+}

@@ -1,0 +1,6 @@
+# Scientific evidence is byte-preserved across platforms for SHA-256 verification.
+results/** -text
+*.png binary
+*.npz binary
+*.pt binary
+*.pdf binary

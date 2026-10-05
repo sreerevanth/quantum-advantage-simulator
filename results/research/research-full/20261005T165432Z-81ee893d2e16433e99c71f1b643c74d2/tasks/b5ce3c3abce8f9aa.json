@@ -1,0 +1,41 @@
+{
+  "job": {
+    "kind": "scaling",
+    "qubits": 6,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu"
+  },
+  "row": {
+    "kind": "scaling",
+    "qubits": 6,
+    "seed": 0,
+    "method": "autoregressive",
+    "steps": 150,
+    "device": "cpu",
+    "energy": -7.295236083342334,
+    "exact_energy": -7.296229810558756,
+    "absolute_energy_error": 0.0009937272164224353,
+    "relative_energy_error": 0.00013619735702189104,
+    "fidelity": 0.9998448978588199,
+    "magnetization_error": 0.0042747073778074615,
+    "transverse_magnetization_error": 0.0011141464260314704,
+    "iterations": 150,
+    "parameter_count": 556,
+    "state_space_size": 64,
+    "reference_seconds": 0.004033200035337359,
+    "method_seconds": 0.9652513999608345,
+    "hamiltonian_bytes": 65536,
+    "state_bytes": 1024,
+    "job_id": "b5ce3c3abce8f9aa",
+    "wall_seconds": 0.9704391999985091,
+    "peak_memory_bytes": 426033152,
+    "rss_start_bytes": 425676800,
+    "memory_scope": "Process RSS sampled every 10ms; includes imported dependencies, may miss short peaks"
+  },
+  "sha256": "af8b7701777a3c45c434780134dd4d9e34ab01cf51001cd17ab625be5b4ed9f9",
+  "checkpoints": {
+    "checkpoints/b5ce3c3abce8f9aa/model.pt": "bed53932b9499cf572ba8befed0a31e9ccee4f220304083e94a305f659114207"
+  }
+}
