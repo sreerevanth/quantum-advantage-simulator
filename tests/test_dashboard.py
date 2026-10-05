@@ -1,5 +1,6 @@
 import json
 
+import pytest
 from fastapi.testclient import TestClient
 
 from qas.api import create_app
@@ -34,3 +35,45 @@ def test_empty_dashboard(tmp_path):
     client = TestClient(create_app(tmp_path))
     assert client.get("/run-catalog").json() == []
     assert client.get("/runs").json() == []
+
+
+@pytest.mark.parametrize("contents", ["{", "null", "[]", '{"rows": null}', '{"rows": [1]}'])
+def test_invalid_saved_metrics_have_controlled_error(tmp_path, contents):
+    run = tmp_path / "run-id"
+    run.mkdir()
+    (run / "config.yaml").write_text("experiment_id: test")
+    metrics = run / "metrics.json"
+    metrics.write_text(contents)
+    client = TestClient(create_app(tmp_path))
+    for endpoint in ("/run-catalog", "/runs/run-id", "/results/summary"):
+        response = client.get(endpoint)
+        assert response.status_code == 503
+        assert response.json() == {"detail": "Saved metrics temporarily unavailable"}
+    # An interrupted write can recover without restarting the API.
+    metrics.write_text('{"rows": [], "verdict": "INCONCLUSIVE"}')
+    assert client.get("/run-catalog").status_code == 200
+
+
+@pytest.mark.parametrize("contents", ["[", "", "[]", "a scalar"])
+def test_invalid_saved_config_has_controlled_error(tmp_path, contents):
+    run = tmp_path / "run-id"
+    run.mkdir()
+    (run / "metrics.json").write_text('{"rows": []}')
+    (run / "config.yaml").write_text(contents)
+    client = TestClient(create_app(tmp_path))
+    response = client.get("/run-catalog")
+    assert response.status_code == 503
+    assert response.json() == {"detail": "Saved configuration temporarily unavailable"}
+
+
+def test_duplicate_run_ids_are_not_silently_overwritten(tmp_path):
+    for experiment in ("first", "second"):
+        run = tmp_path / experiment / "same-id"
+        run.mkdir(parents=True)
+        (run / "config.yaml").write_text(f"experiment_id: {experiment}")
+        (run / "metrics.json").write_text('{"rows": []}')
+    client = TestClient(create_app(tmp_path))
+    for endpoint in ("/run-catalog", "/runs", "/runs/same-id", "/results/summary"):
+        response = client.get(endpoint)
+        assert response.status_code == 409
+        assert response.json() == {"detail": "Duplicate run IDs in results root"}
