@@ -77,3 +77,49 @@ def test_duplicate_run_ids_are_not_silently_overwritten(tmp_path):
         response = client.get(endpoint)
         assert response.status_code == 409
         assert response.json() == {"detail": "Duplicate run IDs in results root"}
+
+
+@pytest.mark.parametrize(
+    "contents", ['{"rows": [], "energy": NaN}', '{"rows": [], "energy": Infinity}']
+)
+def test_nonfinite_metrics_rejected(tmp_path, contents):
+    run = tmp_path / "run"
+    run.mkdir()
+    (run / "config.yaml").write_text("experiment_id: test")
+    (run / "metrics.json").write_text(contents)
+    assert TestClient(create_app(tmp_path)).get("/run-catalog").status_code == 503
+
+
+def test_missing_config_and_large_catalog(tmp_path):
+    for i in range(60):
+        run = tmp_path / f"run-{i:03}"
+        run.mkdir()
+        (run / "config.yaml").write_text("experiment_id: test")
+        (run / "metrics.json").write_text('{"rows": []}')
+    client = TestClient(create_app(tmp_path))
+    assert len(client.get("/run-catalog?limit=10&offset=20").json()) == 10
+    assert client.get("/run-catalog?limit=0").status_code == 422
+    assert client.get("/run-catalog?offset=-1").status_code == 422
+    (tmp_path / "run-000" / "config.yaml").unlink()
+    assert client.get("/run-catalog").status_code == 503
+
+
+def test_api_integrity_and_traversal(tmp_path):
+    from qas.integrity import seal
+
+    run = tmp_path / "run"
+    run.mkdir()
+    (run / "config.yaml").write_text("experiment_id: test")
+    (run / "metrics.json").write_text('{"rows": []}')
+    client = TestClient(create_app(tmp_path))
+    assert client.get("/runs/run/integrity").json()["status"] == "UNSEALED"
+    seal(run)
+    assert client.get("/runs/run/integrity").json()["status"] == "VERIFIED"
+    for path in (
+        "/runs/run/figures/%2e%2e%2fconfig.yaml",
+        "/runs/run/figures/C:%5csecret.png",
+        "/runs/missing/integrity",
+    ):
+        assert client.get(path).status_code == 404
+    (run / "metrics.json").write_text('{"rows": [{}]}')
+    assert client.get("/runs/run/integrity").status_code == 409

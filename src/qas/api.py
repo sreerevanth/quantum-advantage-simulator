@@ -19,6 +19,8 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
         found = {}
         for p in sorted(root.rglob("metrics.json")):
             config = p.parent / "config.yaml"
+            if not config.is_file():
+                raise HTTPException(503, "Saved configuration missing")
             if not (
                 p.resolve().is_relative_to(root)
                 and config.resolve().is_relative_to(root)
@@ -33,6 +35,7 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
     def payload(file):
         try:
             data = json.loads(file.read_text(encoding="utf-8"))
+            json.dumps(data, allow_nan=False)
             if not isinstance(data, dict):
                 raise ValueError("Metrics must be an object")
             if "rows" in data and (
@@ -49,8 +52,9 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
             config = yaml.safe_load(file.read_text(encoding="utf-8"))
             if not isinstance(config, dict):
                 raise ValueError("Configuration must be a mapping")
+            json.dumps(config, allow_nan=False)
             return config
-        except (OSError, ValueError, yaml.YAMLError) as exc:
+        except (OSError, ValueError, TypeError, yaml.YAMLError) as exc:
             raise HTTPException(503, "Saved configuration temporarily unavailable") from exc
 
     @app.get("/", response_class=HTMLResponse)
@@ -58,7 +62,9 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
         return files("qas").joinpath("dashboard.html").read_text(encoding="utf-8")
 
     @app.get("/run-catalog")
-    def catalog():
+    def catalog(limit: int = 1000, offset: int = 0):
+        if not 1 <= limit <= 1000 or offset < 0:
+            raise HTTPException(422, "limit must be 1–1000 and offset nonnegative")
         entries = []
         for run_id, file in runs().items():
             data = payload(file)
@@ -74,7 +80,7 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
                     "path": file.parent.relative_to(root).as_posix(),
                 }
             )
-        return sorted(entries, key=lambda item: item["id"], reverse=True)
+        return sorted(entries, key=lambda item: item["id"], reverse=True)[offset : offset + limit]
 
     @app.get("/runs/{run_id}/figures")
     def figures(run_id: str):
@@ -96,6 +102,20 @@ def create_app(root: str | Path = "results", registry: str = "experiments/regist
         if not image.is_relative_to(root) or not image.is_file():
             raise HTTPException(404, "Unknown figure")
         return FileResponse(image, media_type="image/png")
+
+    @app.get("/runs/{run_id}/integrity")
+    def integrity(run_id: str):
+        from qas.integrity import verify
+
+        file = runs().get(run_id)
+        if file is None:
+            raise HTTPException(404, "Unknown run")
+        if not (file.parent / "manifest.json").is_file():
+            return {"status": "UNSEALED", "note": "Historical or incomplete run"}
+        try:
+            return verify(file.parent)
+        except (ValueError, OSError, TypeError) as exc:
+            raise HTTPException(409, "Evidence integrity verification failed") from exc
 
     @app.get("/health")
     def health():
