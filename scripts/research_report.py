@@ -124,8 +124,8 @@ No quantum, hardware, neural-computational, general VQE, real-device mitigation,
 
 Pre-register deeper-ansatz/optimizer comparisons separately; add sampled VMC and complex/autoregressive NQS, finite-shot/channel-per-gate experiments, provider integration and hardware validation, stronger seed studies, and fair end-to-end scaling/resource contracts. A public open-source release requires an explicit license decision; the original proprietary license is retained.
 """
-Path("docs/FINAL_RESEARCH_REPORT.md").write_text(body, encoding="utf-8")
-Path("docs/RESULTS.md").write_text(
+Path("docs/HISTORICAL_FINAL_RESEARCH_REPORT.md").write_text(body, encoding="utf-8")
+Path("docs/HISTORICAL_RESULTS.md").write_text(
     f"# Executed results\n\nPrimary run: `{args.run.as_posix()}`. Verdict: **{data['verdict']}**. {len(failed)} of 70 stochastic evaluations failed the locked accuracy gate. No advantage claim.\n\n{table}\n\n## Secondary evidence\n\n{secondary}\n\nSee FINAL_RESEARCH_REPORT.md for failures, protocol, provenance and threats to validity.\n",
     encoding="utf-8",
 )

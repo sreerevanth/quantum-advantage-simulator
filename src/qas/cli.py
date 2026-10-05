@@ -111,7 +111,7 @@ def main(argv=None):
             from qas import artifacts, discovery, exact, noise, variational
 
             if not 2 <= args.qubits <= 8:
-                raise ValueError("Local labs support 2Ã¢â‚¬â€œ8 qubits")
+                raise ValueError("Local labs support 2–8 qubits")
             config = vars(args).copy()
             config["experiment_id"] = args.command + "-lab"
             directory = artifacts.create(args.output, config)

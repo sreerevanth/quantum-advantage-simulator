@@ -9,6 +9,7 @@ from qas.integrity import atomic_json, seal, verify
 from qas.shot_noise import (
     Operation,
     density,
+    extrapolation_weights,
     folded,
     measure,
     zne,
@@ -155,6 +156,7 @@ def test_vqe_problem_ansatz_and_qaoa_options():
     assert abs(exact.expectation(result["state"], h) - exact.solve(h)[0][0]) < 1e-6
     assert len(result["gradient_norms"]) >= 1
     assert result["parameter_count"] == 9
+    assert result["circuit_depth_upper_bound"] == 7
     q = variational.qaoa(3, [[0, 1], [1, 2]], iterations=50, optimizer="COBYLA", shots=1000)
     assert 0 <= q["approximation_ratio"] <= 1 + 1e-10
     assert q["finite_shot_evaluation"]["variance"] >= 0
@@ -234,3 +236,98 @@ def test_statistical_summary():
     assert result["mean_ci95"][0] < 3 < result["mean_ci95"][1]
     assert describe([1])["std"] is None
     assert describe([1, 2])["mean_ci95"] is None
+
+
+def test_weighted_allocation_and_invalid_noise():
+    result = zne(
+        [Operation("H", (0,))],
+        1,
+        [(1.0, {0: "Z"})],
+        {"phase_flip": 0.03},
+        shots=100,
+        method="richardson",
+        allocation="weighted",
+    )
+    assert sum(result["allocations"]) <= 300
+    assert len(set(result["allocations"])) > 1
+    assert result["total_shots"] == result["comparison_shots"]
+    for noise in (
+        {"bad": 0.1},
+        {"depolarizing": -0.1},
+        {"amplitude_damping": 0.8, "two_qubit_multiplier": 2},
+    ):
+        with pytest.raises(ValueError):
+            density([Operation("H", (0,))], 1, noise)
+    with pytest.raises(ValueError):
+        folded([Operation("H", (0,))], 2)
+    with pytest.raises(ValueError):
+        extrapolation_weights([1, 1])
+
+
+def test_sgd_and_early_stopping():
+    h = np.eye(4, dtype=complex)
+    result = autoregressive.train(h, 2, steps=30, optimizer="SGD", patience=5, tolerance=1e-8)
+    assert result["early_stopped"] and result["iterations"] < 30
+    assert np.linalg.norm(result["state"]) == pytest.approx(1)
+
+
+def test_hardware_validation_artifact(tmp_path, monkeypatch):
+    from types import SimpleNamespace
+
+    import qiskit.transpiler.preset_passmanagers as managers
+    import qiskit_ibm_runtime as runtime
+    from qiskit import QuantumCircuit
+
+    from qas import hardware
+
+    isa = QuantumCircuit(2)
+    isa.h(0)
+    isa.cx(0, 1)
+    isa.measure_all()
+    job = SimpleNamespace(
+        job_id=lambda: "mock-job",
+        status=lambda: "DONE",
+        result=lambda: [
+            SimpleNamespace(
+                data=SimpleNamespace(meas=SimpleNamespace(get_counts=lambda: {"00": 50, "11": 50}))
+            )
+        ],
+    )
+    adapter = SimpleNamespace(
+        backend=SimpleNamespace(num_qubits=5), service=SimpleNamespace(job=lambda _: job)
+    )
+    monkeypatch.setattr(hardware, "IBMBackend", lambda *a, **k: adapter)
+    monkeypatch.setattr(
+        managers, "generate_preset_pass_manager", lambda **k: SimpleNamespace(run=lambda c: isa)
+    )
+    monkeypatch.setattr(runtime, "SamplerV2", lambda **k: SimpleNamespace(run=lambda *a, **k: job))
+    directory = hardware.validation("mock", 100, tmp_path)
+    data = json.loads((directory / "metrics.json").read_text())
+    assert data["job_id"] == "mock-job" and data["hardware_counts"] == {"00": 50, "11": 50}
+    assert data["transpiled_depth"] == 3 and sum(data["simulator"]["counts"].values()) == 100
+    restored = hardware.validation("mock", 100, tmp_path, "mock-job")
+    assert json.loads((restored / "metrics.json").read_text())["status"] == "DONE"
+
+
+def test_unified_quick_cli_and_resume(tmp_path):
+    from qas.cli import main
+    from qas.integrity import digest
+
+    assert main(["suite", "--quick", "--output", str(tmp_path)]) == 0
+    directory = next((tmp_path / "research-quick").iterdir())
+    payload = json.loads((directory / "metrics.json").read_text())
+    assert payload["complete"] and len(payload["rows"]) == 21
+    assert {r["kind"] for r in payload["rows"]} == {
+        "nqs",
+        "vqe",
+        "mitigation",
+        "qaoa",
+        "discovery",
+        "chemistry",
+        "scaling",
+    }
+    before = digest(directory / "metrics.json")
+    assert main(["suite", "--quick", "--resume", str(directory)]) == 0
+    assert digest(directory / "metrics.json") == before
+    assert main(["verify", str(directory)]) == 0
+    assert len(list((directory / "figures").glob("*.pdf"))) == 7

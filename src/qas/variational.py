@@ -1,5 +1,7 @@
 """PennyLane state-vector VQE and MaxCut QAOA baselines."""
 
+from typing import Any
+
 import numpy as np
 from scipy.optimize import minimize
 
@@ -80,7 +82,7 @@ def vqe(
 
     history = []
 
-    cache = {}
+    cache: dict[str, Any] = {}
 
     def objective(params):
         if "point" not in cache or not np.array_equal(params, cache["point"]):
@@ -138,7 +140,7 @@ def vqe(
         "optimizer_success": bool(result.success),
         "optimizer_message": str(result.message),
         "gate_count": depth * (n + n - 1) + (n if ansatz == "tfim" else 0),
-        "circuit_depth_upper_bound": depth * n,
+        "circuit_depth_upper_bound": depth * n + (1 if ansatz == "tfim" else 0),
     }
 
 

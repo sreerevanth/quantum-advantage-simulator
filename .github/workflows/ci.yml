@@ -3,16 +3,33 @@ on: [push, pull_request]
 jobs:
   validate:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: ${{ matrix.python }}
           cache: pip
-      - run: python -m pip install -e '.[dev,ml,quantum,api]'
+      - run: python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: python -m pip install -e '.[dev,ml,quantum,api,validation,hardware]'
       - run: ruff check .
       - run: ruff format --check .
       - run: mypy src/qas
       - run: pytest --cov=qas --cov-report=term-missing
-      - run: qas --help
+      - name: Verify committed evidence
+        run: python -c "from pathlib import Path; from qas.integrity import verify; print([verify(p.parent) for p in Path('results').rglob('manifest.json')])"
+      - run: python -m pip check
+      - run: qas --help && qas suite --help && qas hardware --help
       - run: python -m build
+      - name: Fresh wheel install
+        run: |
+          python -m venv /tmp/qas-wheel
+          /tmp/qas-wheel/bin/pip install dist/*.whl
+          cd /tmp
+          /tmp/qas-wheel/bin/python -c "from qas.exact import hamiltonian,solve; from importlib.resources import files; assert files('qas').joinpath('dashboard.html').is_file(); print(solve(hamiltonian(2))[0][0])"

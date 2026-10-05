@@ -18,7 +18,7 @@ def device_for(name="cpu"):
     if name not in ("cpu", "cuda", "auto"):
         raise ValueError("device must be cpu, cuda or auto")
     if name == "cuda" and not torch.cuda.is_available():
-        raise RuntimeError("NOT EXECUTED â€” CUDA hardware/runtime unavailable")
+        raise RuntimeError("NOT EXECUTED — CUDA hardware/runtime unavailable")
     return torch.device("cuda" if name != "cpu" and torch.cuda.is_available() else "cpu")
 
 
@@ -26,7 +26,7 @@ class Autoregressive(nn.Module):
     def __init__(self, n, hidden=16, seed=0, device="cpu"):
         super().__init__()
         if not 1 <= n <= 12 or not 1 <= hidden <= 256:
-            raise ValueError("Autoregressive model supports 1â€“12 qubits, hidden 1â€“256")
+            raise ValueError("Autoregressive model supports 1–12 qubits, hidden 1–256")
         self.n, self.hidden = n, hidden
         with torch.random.fork_rng(devices=[]):
             torch.manual_seed(seed)
